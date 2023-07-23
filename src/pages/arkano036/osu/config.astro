@@ -4,13 +4,11 @@ import YoutubeLayout from '@/youtube/layout/YoutubeLayout.astro';
 import Config from '@/youtube/components/generators/Config.astro';
 import Description from '@/youtube/components/Description.astro';
 import Heading from '@/youtube/components/Heading.astro';
-
-import as1 from '../../../assets/youtube/p15.jpg';
 ---
 
 <YoutubeLayout>
   <Heading
-    img={as1}
+    img='/img/youtube/p15.jpg'
     title='Configuraciones'
     desc='Arkano036 | osu! | Config'
   />
@@ -30,5 +28,5 @@ import as1 from '../../../assets/youtube/p15.jpg';
       puedes hacer clic en el título de cada video para redirigirte a YouTube
     </p>
   </Description>
-  <Config/>
+  <Config />
 </YoutubeLayout>

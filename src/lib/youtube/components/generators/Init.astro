@@ -6,7 +6,7 @@ import data from '@/youtube/data/youtube.json';
   <div class='container'>
     <div class='row'>
       {
-        data.lol.url.map((url, index) =>
+        data.osu.init.url.map((url, index) =>
         // eslint-disable-next-line @typescript-eslint/no-unsafe-return
         <div
           class='col-sm-12 col-lg-4 single_gallery_item nature mb-30 wow fadeInUp'
@@ -17,14 +17,14 @@ import data from '@/youtube/data/youtube.json';
               href={url}
               target='_blank'
               rel='noopener noreferrer'
-            >{data.lol.title[index]}
+            >{data.osu.init.title[index]}
             </a>
           </h6>
           <br />
           <br />
           <div class='about-video-area mb-80 wow fadeInUp' data-wow-delay='100ms'>
             <img
-            src={`/img/youtube/thumbs/${data.lol.url[index]}.jpg`}
+            src={`/img/youtube/thumbs/${data.osu.init.thumb[index]}.jpg`}
               alt=''
             />
             <div class='video-icon'>

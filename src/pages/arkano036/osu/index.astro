@@ -3,16 +3,15 @@ import YoutubeLayout from '@/youtube/layout/YoutubeLayout.astro';
 
 import Description from '@/youtube/components/Description.astro';
 import Heading from '@/youtube/components/Heading.astro';
-
-import CounterAll from '../@/youtube/components/CounterAll.html';
-
-import { urlCovers } from '../../../library';
-
-import as1 from '../../../assets/youtube/p12.jpg';
+import CounterAll from '@/youtube/components/CounterAll.html';
 ---
 
 <YoutubeLayout>
-  <Heading img={as1} title='osu!' desc='Arkano036 | osu!' />
+  <Heading
+    img='/img/youtube/p12.jpg'
+    title='osu!'
+    desc='Arkano036 | osu!'
+  />
   <section class='why-choose-us-area section-padding-80-0 clearfix'>
     <div class='container'>
       <CounterAll />
@@ -58,7 +57,7 @@ import as1 from '../../../assets/youtube/p12.jpg';
         <div class='col-12 col-sm-6 col-lg-4'>
           <div class='single-post-area wow fadeInUpBig' data-wow-delay='100ms'>
             <a href='# ' class='post-thumbnail'>
-              <img src={urlCovers('p14p')} alt='' />
+              <img src='/img/youtube/p14p.jpg' alt='' />
             </a>
             <a href='# ' class='btn post-catagory'>osu!</a>
             <div class='post-content'>
@@ -70,7 +69,7 @@ import as1 from '../../../assets/youtube/p12.jpg';
         <div class='col-12 col-sm-6 col-lg-4'>
           <div class='single-post-area wow fadeInUpBig' data-wow-delay='400ms'>
             <a rel='prefetch' href='/financial/crypto/' class='post-thumbnail'>
-              <img src={urlCovers('p15p')} alt='' />
+              <img src='/img/youtube/p15p.jpg' alt='' />
             </a>
             <a href='# ' class='btn post-catagory'>osu!</a>
             <div class='post-content'>
@@ -84,7 +83,7 @@ import as1 from '../../../assets/youtube/p12.jpg';
         <div class='col-12 col-sm-6 col-lg-4'>
           <div class='single-post-area wow fadeInUpBig' data-wow-delay='700ms'>
             <a href='# ' class='post-thumbnail'>
-              <img src={urlCovers('p13p')} alt='' />
+              <img src='/img/youtube/p13p.jpg' alt='' />
             </a>
             <a href='# ' class='btn post-catagory'>osu!</a>
             <div class='post-content'>
@@ -98,7 +97,7 @@ import as1 from '../../../assets/youtube/p12.jpg';
         <div class='col-12 col-sm-6 col-lg-4'>
           <div class='single-post-area wow fadeInUpBig' data-wow-delay='700ms'>
             <a href='# ' class='post-thumbnail'>
-              <img src={urlCovers('p16p')} alt='' />
+              <img src='/img/youtube/p16p.jpg' alt='' />
             </a>
             <a href='# ' class='btn post-catagory'>osu!</a>
             <div class='post-content'>
@@ -110,7 +109,8 @@ import as1 from '../../../assets/youtube/p12.jpg';
         <div class='col-12 col-sm-6 col-lg-4'>
           <div class='single-post-area wow fadeInUpBig' data-wow-delay='700ms'>
             <a href='# ' class='post-thumbnail'>
-              <img src={urlCovers('p17p')} alt='' /></a>
+              <img src='/img/youtube/p17p.jpg' alt='' />
+            </a>
             <a href='# ' class='btn post-catagory'>osu!</a>
             <div class='post-content'>
               <div class='post-meta'> </div>

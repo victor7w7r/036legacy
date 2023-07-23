@@ -1,18 +1,13 @@
 ---
 import YoutubeLayout from '@/youtube/layout/YoutubeLayout.astro';
 
-import CounterAll from '@/youtube/components/CounterAll.astro';
 import Description from '@/youtube/components/Description.astro';
 import Heading from '@/youtube/components/Heading.astro';
-
-import { urlCovers } from '../../../library';
-
-import as1 from '../../../assets/youtube/p7.jpg';
 ---
 
 <YoutubeLayout>
   <Heading
-    img={as1}
+    img='/img/youtube/p7.jpg'
     title='Tutoriales'
     desc='Arkano036 | Tutoriales'
   />
@@ -49,7 +44,7 @@ import as1 from '../../../assets/youtube/p7.jpg';
             data-wow-delay='100ms'
           >
             <a href='# ' class='post-thumbnail'>
-              <img src={urlCovers('p1p')} alt='' />
+              <img src='/img/youtube/p1p.jpg' alt='' />
             </a>
             <a href='# ' class='btn post-catagory'>Tutoriales</a>
             <div class='post-content'>
@@ -63,7 +58,7 @@ import as1 from '../../../assets/youtube/p7.jpg';
         <div class='col-12 col-sm-6 col-lg-3'>
           <div class='single-post-area wow fadeInUpBig' data-wow-delay='400ms'>
             <a rel='prefetch' href='/financial/crypto/' class='post-thumbnail'>
-              <img src={urlCovers('p3p')} alt='' />
+              <img src='/img/youtube/p3p.jpg' alt='' />
             </a>
             <a href='# ' class='btn post-catagory'>Tutoriales</a>
             <div class='post-content'>
@@ -77,12 +72,12 @@ import as1 from '../../../assets/youtube/p7.jpg';
         <div class='col-12 col-sm-6 col-lg-3'>
           <div class='single-post-area wow fadeInUpBig' data-wow-delay='700ms'>
             <a href='# ' class='post-thumbnail'>
-              <img src={urlCovers('p4p')} alt='' />
+              <img src='/img/youtube/p4p.jpg' alt='' />
             </a>
             <a href='# ' class='btn post-catagory'>Tutoriales</a>
             <div class='post-content'>
               <div class='post-meta'> </div>
-              <a rel='prefetch' href='/arkano036/tutoriales/info/' class='post-title'>
+              <a rel='prefetch' href='/arkano036/tutoriales/infoyt/' class='post-title'>
                 Informática
               </a>
             </div>
@@ -91,7 +86,7 @@ import as1 from '../../../assets/youtube/p7.jpg';
         <div class='col-12 col-sm-6 col-lg-3'>
           <div class='single-post-area wow fadeInUpBig' data-wow-delay='700ms'>
             <a href='# ' class='post-thumbnail'>
-              <img src={urlCovers('p5p')} alt='' />
+              <img src='/img/youtube/p5p.jpg' alt='' />
             </a>
             <a href='# ' class='btn post-catagory'>Tutoriales</a>
             <div class='post-content'>

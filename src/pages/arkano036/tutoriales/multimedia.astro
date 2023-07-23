@@ -4,23 +4,21 @@ import YoutubeLayout from '@/youtube/layout/YoutubeLayout.astro';
 import Description from '@/youtube/components/Description.astro';
 import Heading from '@/youtube/components/Heading.astro';
 import Multimedia from '@/youtube/components/generators/Multimedia.astro';
-
-import as1 from '../../../assets/youtube/p3.jpg';
 ---
 
 <YoutubeLayout>
   <Heading
-    img={as1}
-    title='Miscelánea'
-    desc='Arkano036 | Tutoriales | Miscelánea'
+    img='/img/youtube/p3.jpg'
+    title='Edición Multimedia'
+    desc='Arkano036 | Tutoriales | Multimedia'
   />
   <Description>
     <br />
     <br />
     <br />
-    <h2>Otros Tutoriales</h2>
+    <h2>Edición Multimedia</h2>
     <br />
-    <p>Tutoriales sobre temas variados. </p>
+    <p>Tutoriales de edición multimedia </p>
   </Description>
   <Multimedia />
 </YoutubeLayout>

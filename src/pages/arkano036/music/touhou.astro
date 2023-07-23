@@ -4,12 +4,14 @@ import YoutubeLayout from '@/youtube/layout/YoutubeLayout.astro';
 import Description from '@/youtube/components/Description.astro';
 import Heading from '@/youtube/components/Heading.astro';
 import Touhou from '@/youtube/components/generators/Touhou.astro';
-
-import as1 from '../../../assets/youtube/p8.jpg';
 ---
 
 <YoutubeLayout>
-  <Heading img={as1} title='Touhou' desc='Arkano036 | Música | Touhou' />
+  <Heading
+    img='/img/youtube/p8.jpg'
+    title='Touhou'
+    desc='Arkano036 | Música | Touhou'
+  />
   <Description>
     <br />
     <br />
@@ -27,5 +29,5 @@ import as1 from '../../../assets/youtube/p8.jpg';
       de cada video para redirigirte a YouTube
     </p>
   </Description>
-  <Touhou/>
+  <Touhou />
 </YoutubeLayout>

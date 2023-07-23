@@ -4,13 +4,11 @@ import Heading from '@/youtube/components/Heading.astro';
 import Sketchs from '@/youtube/components/generators/Sketchs.astro';
 
 import YoutubeLayout from '@/youtube/layout/YoutubeLayout.astro';
-
-import as1 from '../../assets/youtube/p6.jpg';
 ---
 
 <YoutubeLayout>
   <Heading
-    img={as1}
+    img='/img/youtube/p6.jpg'
     title='Sketch/Random'
     desc='Arkano036 | Sketch/Random'
   />
@@ -31,5 +29,5 @@ import as1 from '../../assets/youtube/p6.jpg';
       puedes hacer clic en el título de cada video para redirigirte a YouTube
     </p>
   </Description>
-  <Sketchs/>
+  <Sketchs />
 </YoutubeLayout>
