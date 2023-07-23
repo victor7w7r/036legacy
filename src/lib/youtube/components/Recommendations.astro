@@ -1,0 +1,80 @@
+---
+import RecommendationItem from './RecommendationItem.astro';
+
+const items = [
+  {
+    img: '/img/youtube/collage1.jpg',
+    url: 'https://www.youtube.com/watch?v=ZYqXGwHQGUM'
+  },
+  {
+    img: '/img/youtube/collage2.jpg',
+    url: 'https://www.youtube.com/watch?v=XuE95IZH7iQ'
+  },
+  {
+    img: '/img/youtube/collage3.jpg',
+    url: 'https://www.youtube.com/watch?v=zVidmU2Ugu0'
+  },
+  {
+    img: '/img/youtube/collage4.jpg',
+    url: 'https://www.youtube.com/watch?v=k9iIqmKNgfM'
+  },
+  {
+    img: '/img/youtube/collage5.jpg',
+    url: 'https://www.youtube.com/watch?v=caXVc1ZywEs'
+  },
+  {
+    img: '/img/youtube/collage6.jpg',
+    url: 'https://www.youtube.com/watch?v=zfl8lACucG0'
+  },
+  {
+    img: '/img/youtube/collage7.jpg',
+    url: 'https://www.youtube.com/watch?v=XcA3HU998DQ'
+  },
+  {
+    img: '/img/youtube/collage8.jpg',
+    url: 'https://www.youtube.com/watch?v=TZKTc_Kems4'
+  },
+  {
+    img: '/img/youtube/collage9.jpg',
+    url: 'https://www.youtube.com/watch?v=8ZLc-zJOqYs'
+  },
+  {
+    img: '/img/youtube/collage10.jpg',
+    url: 'https://www.youtube.com/watch?v=9mxkaJ_-Ib0'
+  },
+  {
+    img: '/img/youtube/collage11.jpg',
+    url: 'https://www.youtube.com/watch?v=GJkj5bgNGIY'
+  }
+];
+---
+
+<div class='alime-portfolio-area section-padding-80 clearfix'>
+  <div class='container-fluid'>
+    <div class='row'>
+      <div class='col-12'>
+        <div
+          class='section-heading text-center wow fadeInUp'
+          data-wow-delay='100ms'
+        >
+          <h2>Videos recomendados del creador</h2>
+        </div>
+        <div class='alime-projects-menu'>
+          <div class='portfolio-menu text-center'>
+            <button class='btn active' data-filter='*'>Todos</button>
+            <button class='btn' data-filter='.osu'>osu!</button>
+            <button class='btn' data-filter='.music'>Música</button>
+            <button class='btn' data-filter='.sketch'>Sketchs/Random</button>
+            <button class='btn' data-filter='.tuto'>Tutoriales</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='row alime-portfolio'>
+      {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+        items.map((item) => <RecommendationItem img={item.img} url={item.url} />)
+      }
+    </div>
+  </div>
+</div>

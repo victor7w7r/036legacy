@@ -1,0 +1,27 @@
+---
+type Props = {
+  img: string,
+  title: string,
+  body: string
+};
+
+const { img, title, body } = Astro.props;
+---
+
+<section
+  class='breadcrumb-area blog bg-img bg-overlay jarallax'
+  style={`background-image: url(${img})`}
+>
+  <div class='container h-100'>
+    <div class='row h-100 align-items-center'>
+      <div class='col-12'>
+        <div class='breadcrumb-content text-center'>
+          <h2 class='page-title'>{title}</h2>
+          <div class='post-meta'>
+            <p class='p1'>{body}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

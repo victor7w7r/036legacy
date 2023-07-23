@@ -1,0 +1,4 @@
+{
+  "css.lint.unknownAtRules": "ignore",
+  "eslint.validate": ["astro", "typescript"]
+}

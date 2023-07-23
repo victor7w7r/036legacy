@@ -1,0 +1,238 @@
+---
+import CoreLayout from '@/core/layout/CoreLayout.astro';
+
+import Disponibility from '@/core/components/teaching/Disponibility.astro';
+import Description from '@/core/components/teaching/Description.astro';
+import Heading from '@/core/components/teaching/Heading.astro';
+import Reserve from '@/core/components/teaching/Reserve.astro';
+---
+
+<CoreLayout>
+  <Heading
+    img='/img/core/editi1.jpg'
+    title='Edición Multimedia'
+    body='Informática | Edición Fotográfica | Edición de Video'
+  />
+  <Disponibility>
+    <div class='alert alert-success' role='alert'>
+      <strong>¡Bien!</strong>
+      El curso está disponiblek
+      para individual y en grupo.
+    </div>
+    <div class='alert alert-warning' role='alert'>
+      <strong>¡Ups!</strong> Cualquier encargo sobre
+      edición de video, avisar con tiempo
+    </div>
+  </Disponibility>
+  <Description>
+    <p>
+      Para ser Youtuber, Instagramer y para realizar tus deberes del instituto en el que estás
+      estudiando, sea cual sea el motivo, te enseñaré como utilizar las herramientas de Adobe Creative Cloud
+      &reg; para que puedas editar tu contenido multimedia y ser creador de contenidos.
+    </p>
+    <p>
+      Te explicaré de manera básica e intermedia para edición de fotografía, edición de video, gráficos en movimiento,
+      fundamentos de animación y efectos especiales.
+    </p>
+    <p>
+      No importa que tengas material profesional para aprender, con lo que se te va a enseñar, puedes realizarlo
+      con cualquier dispositivo de foto/video.
+    </p>
+    <br />
+    <p class='subtitle'>Contenidos</p>
+      <br />
+      <div class='row'>
+        <div class='col-4'>
+          <div class='list-group' id='list-tab' role='tablist'>
+            <a
+              class='list-group-item list-group-item-action active'
+              id='list-home-list'
+              data-toggle='list'
+              href='#list-home'
+              role='tab'
+              aria-controls='home'
+            >
+              Edición de fotografía
+            </a>
+            <a
+              class='list-group-item list-group-item-action'
+              id='list-profile-list'
+              data-toggle='list'
+              href='#list-profile'
+              role='tab'
+              aria-controls='profile'
+            >
+              Edición de pistas de video
+            </a>
+            <a
+              class='list-group-item list-group-item-action'
+              id='list-messages-list'
+              data-toggle='list'
+              href='#list-messages'
+              role='tab'
+              aria-controls='messages'
+            >
+              Gráficos en movimiento y efectos especiales
+            </a>
+            <a
+              class='list-group-item list-group-item-action'
+              id='list-settings-list'
+              data-toggle='list'
+              href='#list-settings'
+              role='tab'
+              aria-controls='settings'
+            >
+              Fundamientos de animación
+            </a>
+            <a
+              class='list-group-item list-group-item-action'
+                id='list-sett2-list'
+                data-toggle='list'
+                href='#list-sett2'
+                role='tab'
+                aria-controls='sett2'>
+              Manipulación de audio
+            </a>
+          </div>
+        </div>
+        <div class='col-8'>
+          <div class='tab-content' id='nav-tabContent'>
+            <div
+              class='tab-pane fade show active'
+              id='list-home'
+              role='tabpanel'
+              aria-labelledby='list-home-list'
+            >
+              -Adobe Photoshop: Controles y primeras impresiones
+              <br /> -Resoluciones de imagen
+              <br /> -Formatos y extensiones de imagen
+              <br />
+              <br /> -Modos de color
+              <br /> -Ajustes de imagen
+              <br /> -Recorte y manipulación de imagen
+              <br /> -Selección de imágenes
+              <br /> -Capas
+              <br /> -Opciones de fusión
+              <br />
+              <br /> -Herramientas para imágenes
+              <br /> -Creación de textos y formas
+              <br /> -Filtros de imágenes
+              <br /> -Tips intermedios para manipular una fotografía digital
+              <br />
+            </div>
+            <div
+              class='tab-pane fade'
+              id='list-profile'
+              role='tabpanel'
+              aria-labelledby='list-profile-list'
+            >
+              -Adobe Premiere Pro: Controles y primeras impresiones
+              <br /> -Formatos y extensiones de video
+              <br /> -Fotogramas y velocidad de transferencia de video
+              <br /> -Resolución y tamaños de video
+              <br />
+              <br /> -Uso de la linea de tiempo
+              <br /> -Uso de los controles para edición de video
+              <br /> -Efectos: Uso de efectos, controles de efectos y transiciones
+              <br />
+              <br /> -Uso de archivos importados como Photoshop y After Effects
+              <br /> -Tips para optimización de la edición de videos y la manipulación de secuencias
+              <br />
+            </div>
+            <div
+              class='tab-pane fade'
+              id='list-messages'
+              role='tabpanel'
+              aria-labelledby='list-messages-list'
+            >
+              -Adobe After Effects: Controles y primeras impresiones
+              <br /> -Fundamentos de propiedades de video y fotos
+              <br /> -Composición: Definición y propiedades
+              <br />
+              <br /> -Uso de la linea de tiempo
+              <br /> -Efectos y conjunto de efectos especiales para composición
+              <br /> -Capas: Opciones de fusión y estilos de capas
+              <br /> -Capas de forma, capas de ajustes y capas de texto
+              <br /> -Máscaras: Superposición de objetos, gráficos y videos
+              <br /> -Uso de los controles para edición de capas
+              <br /> -Definidores de capas
+              <br />
+              <br /> -Teclas de acceso rápido para composiciones
+              <br /> -Fotogramas claves: movimiento lineal y movimiento de curvas personalizadas
+              <br /> -Transformación y distorsión de capas
+              <br /> -Comunicación bidireccional entre After Effects y Premiere Pro
+              <br /> -Rastreador
+              <br /> -Pincel de rotoscopía
+            </div>
+            <div
+              class='tab-pane fade'
+              id='list-settings'
+              role='tabpanel'
+              aria-labelledby='list-settings-list'
+            >
+              -Adobe Animate: Controles y primeras impresiones
+              <br /> -Fundamentos de propiedades de video y fotos
+              <br /> -Documentos de Flash y escenas: Definición y propiedades
+              <br />
+              <br /> -Uso de la línea de tiempo
+              <br /> -Fotogramas y uso de fotogramas claves
+              <br /> -Herramientas de Animate
+              <br /> -Creación de formas, dibujos y textos
+              <br /> -Interpolaciones de movimiento
+              <br />
+              <br /> -Animación básica: Capas, fondos y papel cebolla
+              <br /> -Uso de la cámara y movimiento de la cámara
+              <br /> -Creación de gráficos y clips de película
+              <br /> -Tips para animación básica, creación de fondos, temblor decorativo y animación de stickmans
+            </div>
+            <div
+              class='tab-pane fade'
+              id='list-sett2'
+              role='tabpanel'
+              aria-labelledby='list-sett2-list'
+            >
+              -Adobe Audition: Controles y primeras impresiones
+              <br /> -Formatos y extensiones de audio
+              <br /> -Muestreo y compresión de audio
+              <br />
+              <br /> -Uso de la línea de tiempo
+              <br /> -Herramientas de manipulación de audio
+              <br /> -Sesión multipista
+              <br /> -Efectos para la edición de audio
+              <br /> -Ecualización de audio
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <p>
+        Es mucho más recomendable que tengas una pc de recursos intermedios ya que estos programas necesitan
+        para la manipulación de contenidos multimedia.
+      </p>
+  </Description>
+  <Reserve />
+  <div class='alime-pager-area section-padding-80-50'>
+    <div class='container'>
+      <div class='row no-gutters'>
+        <div class='col-6'>
+          <div class='previous bg-img' style='background-image: url("/img/core/ooo1.jpg")'>
+            <div class='overlay-content d-flex align-items-center justify-content-center'>
+              <a rel='prefetch' href='/class/objects' class='post-title'>Programación  Orientada a Objetos</a>
+              <a href='# ' class='previous-link'><i class='arrow_left'></i></a>
+            </div>
+          </div>
+        </div>
+        <div class='col-6'>
+          <div class='next bg-img' style='background-image: url("/img/core/web1.jpg")'>
+            <div class='overlay-content d-flex align-items-center justify-content-center'>
+              <a rel='prefetch' href='/class/design' class='post-title'>Diseño Web</a>
+              <a href='# ' class='next-link'><i class='arrow_right'></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</CoreLayout>

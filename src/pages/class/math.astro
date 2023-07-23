@@ -1,0 +1,191 @@
+---
+import CoreLayout from '@/core/layout/CoreLayout.astro';
+
+import Disponibility from '@/core/components/teaching/Disponibility.astro';
+import Description from '@/core/components/teaching/Description.astro';
+import Heading from '@/core/components/teaching/Heading.astro';
+import Reserve from '@/core/components/teaching/Reserve.astro';
+---
+
+<CoreLayout>
+  <Heading
+    img='/img/core/coll1.jpg'
+    title='Matemáticas para Colegio'
+    body='Matemáticas | Educación Básica | Bachillerato'
+  />
+  <Disponibility>
+    <div class='alert alert-success' role='alert'>
+      <strong>¡Bien!</strong>
+      El curso está disponible para individual y en grupo.
+    </div>
+    <div class='alert alert-warning' role='alert'>
+      <strong>¡Ups!</strong>
+      Para temas de Cónicas,
+      Probabiliad y Estadística para Bachillerato, reservar las clases con tiempo.
+    </div>
+  </Disponibility>
+  <Description>
+    <p>
+      Los chicos de colegio dependiendo de los docentes en que se los aplica, no suelen
+      ser los óptimos en el ámbito de pedagogía y pues estos suelen fallar dentro de su rendimiento, o a su vez
+      por su simple descuido, se perdió el tema en una clase, llenándose de dudas.
+    </p>
+    <p>
+      Mi experiencia es alta para ejercicios, estrategias y consejos para diversos ámbitos dentro
+      del contenido de álgebra y su mantenimiento del mismo y que el chico o chica pueda asimilar el conocimiento.
+    </p>
+    <p>
+      Debes tener en cuenta que dependiendo de los temas que te listaré a continuación, tanto como el precio y
+      mi nivel de conocimiento pueden variar.
+    </p>
+    <br />
+    <p class='subtitle'>Contenidos</p>
+    <br />
+    <div class='row'>
+      <div class='col-4'>
+        <div class='list-group' id='list-tab' role='tablist'>
+          <a
+            class='list-group-item list-group-item-action active'
+            id='list-home-list'
+            data-toggle='list'
+            href='#list-home'
+            role='tab'
+            aria-controls='home'>
+            EGB 8,9,10
+          </a>
+          <a
+            class='list-group-item list-group-item-action'
+            id='list-profile-list'
+            data-toggle='list'
+            href='#list-profile'
+            role='tab'
+            aria-controls='profile'>
+            Bachillerato 1,2
+          </a>
+          <a
+            class='list-group-item list-group-item-action'
+            id='list-messages-list'
+            data-toggle='list'
+            href='#list-messages'
+            role='tab'
+            aria-controls='messages'>
+            Tercero de Bachillerato
+          </a>
+        </div>
+      </div>
+      <div class='col-8'>
+        <div class='tab-content' id='nav-tabContent'>
+          <div
+            class='tab-pane fade show active'
+            id='list-home'
+            role='tabpanel'
+            aria-labelledby='list-home-list'
+          >
+            -Números Enteros
+            <br /> -Valor Absoluto
+            <br /> -Operaciones de números enteros
+            <br /> -Números racionales, operaciones
+            <br /> -Radicación
+            <br /> -Geometría Básica
+            <br /> -Probabilidad y Estadística
+            <br /> -Lógica Proposicional
+            <br />
+            <br /> -Números reales, operaciones
+            <br /> -Notación Científica
+            <br /> -Racionalización de Denominadores
+            <br /> -Expresiones algebráicas
+            <br /> -Polinomios, operaciones
+            <br /> -Factor común
+            <br /> -Agrupación de términos
+            <br /> -Cubos perfectos
+            <br /> -Trinomios Cuadrados Perfectos
+            <br /> -Regla de Ruffini
+            <br /> -Ecuaciones de primer grado con una incógnita
+            <br /> -Inecuaciones de primer grado con una incógnita
+            <br /> -Conjuntos: Relaciones y Operaciones
+            <br /> -Funciones: Definiciones y continuidad
+            <br />
+            <br /> -Recta Real
+            <br /> -Monotonía de funciones crecientes y decrecientes
+            <br /> -Funciones simétricas
+            <br /> -Función lineal
+            <br /> -Pendiente de una recta
+            <br /> -Ecuación de la recta
+            <br /> -Pendientes entre rectas paralelas y perpendiculares
+            <br /> -Sistemas de ecuaciones lineales, métodos de resolución
+            <br /> -Función cuadrática, gráficos y análisis
+            <br /> -Ecuaciones de segundo grado con una incógnita
+            <br /> -Trigonometría, razones trigonométricas
+            <br /> -Probabiliadad y estadística para 10mo
+          </div>
+          <div
+            class='tab-pane fade'
+            id='list-profile'
+            role='tabpanel'
+            aria-labelledby='list-profile-list'
+          >
+            -Propiedades de los exponentes y los logarítmos
+            <br /> -Ecuaciones irracionales
+            <br /> -Funciones a trozos
+            <br /> -Límites y derivación
+            <br /> -Indeterminaciones y reglas de derivación
+            <br /> -Vectores: Dependencia, componenetes, bases, operaciones y vector unitario
+            <br /> -Lugares geométricos: Mediatriz, Bisecriz, rectas secantes
+            <br />
+            <br /> -Función: Conceptos generalizados
+            <br /> -Función Inyectiva, sobreyectiva e imyectiva
+            <br /> -Función Inversa
+            <br /> -Progresiones aritméticas y geométricas
+            <br /> -Funciones trigonométricas
+            <br /> -Límites y derivación: Aplicaciones y Análisis de funciones
+            <br /> -Vectores en R2: producto cruz, producto punto, representación paramétrica
+            <br /> -Cónicas: Elipse, hipérbola, parábola
+          </div>
+          <div
+            class='tab-pane fade'
+            id='list-messages'
+            role='tabpanel'
+            aria-labelledby='list-messages-list'
+          >
+            <br />
+            Esta área de matemáticas es competente para Análisis Matemático con temas referentes a
+            <a rel='prefetch' href='/class/analysis/' class='purple'>Cálculo Diferencial e Integral</a>
+            y
+            <a rel='prefetch' href='/class/linear/' class='purple'>Álgebra Lineal</a>,
+            siempre y cuando el alumno sepa manejar muy bien los temas mencionados en 2do de BGU.
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <p>
+      Recuerda que es mucho mejor para mí que sepas todos los temas en orden para no
+      consumir tiempo adicional que podrías usarlo para avanzar en los temas posteriores.
+      Como por ejemplo, no puedo avanzar en análisis de funciones sin que sepas factorización.
+    </p>
+  </Description>
+  <Reserve />
+  <div class='alime-pager-area section-padding-80-50'>
+    <div class='container'>
+      <div class='row no-gutters'>
+        <div class='col-6'>
+          <div class='previous bg-img' style='background-image: url("/img/core/51.jpg")'>
+            <div class='overlay-content d-flex align-items-center justify-content-center'>
+              <a rel='prefetch' href='/class/analysis' class='post-title'>Análisis Matemático</a>
+              <a href='# ' class='previous-link'><i class='arrow_left'></i></a>
+            </div>
+          </div>
+        </div>
+        <div class='col-6'>
+          <div class='next bg-img' style='background-image: url("/img/core/53.jpg")'>
+            <div class='overlay-content d-flex align-items-center justify-content-center'>
+              <a rel='prefetch' href='/class/linear' class='post-title'>Álgebra Lineal</a>
+              <a href='# ' class='next-link'><i class='arrow_right'></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</CoreLayout>

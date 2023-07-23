@@ -1,0 +1,34 @@
+---
+import YoutubeLayout from '@/youtube/layout/YoutubeLayout.astro';
+
+import Description from '@/youtube/components/Description.astro';
+import Heading from '@/youtube/components/Heading.astro';
+import Recop from '@/youtube/components/generators/Recop.astro';
+
+import as1 from '../../../assets/youtube/p16.jpg';
+---
+
+<YoutubeLayout>
+  <Heading
+    img={as1}
+    title='Recopilaciones'
+    desc='Arkano036 | osu! | Recopilaciones'
+  />
+  <Description>
+    <br />
+    <br />
+    <br />
+    <h2>Fails, pero buenos fails</h2>
+    <br />
+    <p>
+      Una compilación de las mejores fallas de todos los modos de juego para osu!,
+      para que puedas ver lo pro que soy ¡A que sí!.
+    </p>
+    <br />
+    <p>
+      (Si el video no funciona o no está disponible, puedes hacer clic en el título
+      de cada video para redirigirte a YouTube
+    </p>
+  </Description>
+  <Recop />
+</YoutubeLayout>

@@ -1,0 +1,66 @@
+<div class='container'>
+  <div class='row'>
+    <div class='chatbox chatbox22 chatbox--tray' id='chatbox'>
+      <div class='chatbox__title' id='chatbox-title'>
+        <h5><a href='# '>Chat</a></h5>
+        <button class='chatbox__title__close' id='chatbox-title-close'>
+          <span>
+            <svg viewBox='0 0 12 12' width='12px' height='12px'>
+              <line stroke='#FFFFFF' x1='11.75' y1='0.25' x2='0.25' y2='11.75'></line>
+              <line stroke='#FFFFFF' x1='11.75' y1='11.75' x2='0.25' y2='0.25'></line>
+            </svg>
+          </span>
+        </button>
+      </div>
+      <div class='chatbox__body' id='chat-content'></div>
+      <form id='chatbox'>
+        <div class='panel-footer'>
+          <div class='input-group'>
+            <input
+              id='chat-nombre'
+              type='text'
+              class='form-control input-sm chat_set_height'
+              placeholder='Nombre' tabindex={0}
+              dir='ltr' spellcheck='false'
+              autocomplete='off'
+              autocapitalize='off' contenteditable='true'
+            />
+          </div>
+          <div class='input-group'>
+            <input
+              id='chat-texto'
+              type='text'
+              class='form-control input-sm chat_set_height'
+              placeholder='Mensaje' tabindex={0}
+              dir='ltr' spellcheck='false' autocomplete='off'
+              autocapitalize='off' contenteditable='true'
+            />
+            <button
+              class='btn bt_bg btn-sm'
+              type='submit'
+              id='chat-submit'
+            >
+              Envíar
+          </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  import { $ } from 'carbonium';
+
+  const chatbox = $('#chatbox');
+  const scrollTray = $('#chat-content');
+
+  $('#chatbox-title-close').onclick = () =>
+    chatbox.classList.add('chatbox--closed');
+
+  $('#chatbox-title').onclick = () => {
+    chatbox.classList.toggle('chatbox--tray');
+    scrollTray.scrollTop =
+      scrollTray.scrollHeight - scrollTray.clientHeight;
+  };
+</script>

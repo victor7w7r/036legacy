@@ -1,0 +1,383 @@
+---
+import CoreLayout from '@/core/layout/CoreLayout.astro';
+import Donate from '@/common/components/Donate.astro';
+import Heading from '@/core/components/financial/Heading.astro';
+---
+
+<CoreLayout>
+  <Heading
+    img='/img/core/wall-l.jpg'
+    title='Wallets y Direcciones'
+    desc='Financial | Crypto | Wallets'
+  />
+  <section class='our-team-area section-padding-crypto'>
+    <div class='about-us-area section-padding-crypto clearfix'>
+      <div class='container'>
+        <div class='row align-items-center'>
+          <div class='col-12 col-lg-20'>
+            <div class='alert alert-info' role='alert'>
+              <strong>¡Sé sabio!</strong>
+              Estamos hablando de dinero, todo esto es bajo tu responsabilidad,
+              sé paciente, perseverante, pon cabeza en esto y disfruta.
+            </div>
+            <div class='alert alert-info' role='alert'>
+              <strong>¡Infinitesimal!</strong>
+              Debido a que las criptomonedas tienen un valor grande en el mercado,
+              se circulan fracciones, así que en vez de hablar en Coins, hablaremos
+              al Satoshi o Litoshi como unidad de medida (0.00000001 es 1 SAT).
+            </div>
+            <br />
+            <div class='about-us-content mb-80'>
+              <br />
+              <h3 class='wow fadeInUp' data-wow-delay='100ms'>Direcciones de Criptomonedas</h3>
+              <div class='line wow fadeInUp' data-wow-delay='200ms'></div>
+              <p class='wow fadeInUp' data-wow-delay='300ms'>
+                Las direcciones de bitcoin se definen a una larga cadena de caracteres que
+                identifican a una cartera que en el cual de por sí tiene las criptomonedas
+                que te han transferido o que has generado por ejemplo
+                <a
+                  href='https://www.blockchain.com/btc/address/33WgZP58ERTbe8wBC3vSBHAYeXC56a15Zj'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  33WgZP58ERTbe8wBC3vSBHAYeXC56a15Zj
+                </a>
+                Se puede ver publicamente las transacciones que se han hecho a dichas direcciones de bitcoin con la red Blockchain.
+                Con tu billetera haces tus depósitos a esa cuenta software donde almacenas tus monedas o que te depositen,
+                con otras billeteras de terceros o alguna otra dirección de billetera que tengas en otra página,
+                se lo denomina retirar o transferir.
+              </p>
+            </div>
+            <div class='about-us-content mb-80'>
+              <h3 class='wow fadeInUp' data-wow-delay='100ms'>Tipos de Billeteras</h3>
+              <div class='line wow fadeInUp' data-wow-delay='200ms'></div>
+              <p class='wow fadeInUp' data-wow-delay='300ms'>
+                A continuación te enlistaré los tipos de billeteras que podrías usar para manipular tus criptomonedas,
+                con sus respectivas ventajas y desventajas, alguno de estos tipos de billeteras no pueden que
+                sean accesibles por motivos de hardware y ancho de banda. Las billeteras para dispositivos
+                móviles no los enlisto por motivos de seguridad y desde mi punto de vista no son recomendables.
+              </p>
+              <br />
+              <div class='container'>
+                <div class='row'>
+                  <div class='col-12'>
+                    <div class='row'>
+                      <div class='col-4'>
+                        <div
+                          class='list-group'
+                          id='list-tab'
+                          role='tablist'
+                        >
+                          <a
+                            class='list-group-item list-group-item-action active'
+                            id='list-home-list'
+                            data-toggle='list'
+                            href='#list-home'
+                            role='tab'
+                            aria-controls='home'
+                          >
+                            Hardware
+                          </a>
+                          <a
+                            class='list-group-item list-group-item-action'
+                            id='list-profile-list'
+                            data-toggle='list'
+                            href='#list-profile'
+                            role='tab'
+                            aria-controls='profile'
+                          >
+                            Software
+                          </a>
+                          <a
+                            class='list-group-item list-group-item-action'
+                            id='list-settings-list'
+                            data-toggle='list'
+                            href='#list-settings'
+                            role='tab'
+                            aria-controls='settings'>
+                              Web
+                          </a>
+                        </div>
+                      </div>
+                      <div class='col-8'>
+                        <div class='tab-content' id='nav-tabContent'>
+                          <div
+                            class='tab-pane fade show active'
+                            id='list-home'
+                            role='tabpanel'
+                            aria-labelledby='list-home-list'
+                          >
+                            <div class='alert alert-info' role='alert'>
+                              <strong>¡Ventajas!</strong>
+                            </div>
+                            -De por sí son dispositivos seguros que te permiten almacenar todas tus
+                            criptomonedas y es totalmente ideal para almacenar cualquier cantidad de criptomonedas.
+                            <br /> -Son 100% seguros, la vulnerabilidad es casi imposible.
+                            <br />
+                            <br />
+                            <div class='alert alert-danger' role='alert'>
+                              <strong>Desventajas</strong>
+                            </div>
+                            -Los dispositivos son caros de comprar
+                            <br /> -El Escaneo de códigos QR no es posible.
+                            <br /> -La pérdida del dispositivo hace que tus fondos sean irrecuperables.
+                          </div>
+                          <div
+                            class='tab-pane fade'
+                            id='list-profile'
+                            role='tabpanel'
+                            ria-labelledby='list-profile-list'
+                          >
+                            <div class='alert alert-info' role='alert'>
+                              <strong>¡Ventajas!</strong>
+                            </div>
+                            -Tienen un entorno amplio para el uso y control de las criptomonedas.
+                            <br />
+                            -Algunas criptomonedas ofrecen soporte para otras billeteras, en la que es posible operar con todos los nodos.
+                            <br />
+                            <br />
+                            <div class='alert alert-danger' role='alert'>
+                              <strong>Desventajas</strong>
+                            </div>
+                            -Es más propenso a malware y virus.
+                            <br />-El Escaneo de códigos QR no es posible.
+                            <br />-Para la descarga de la red Bitcoin se requiere más de 250 GB de almacenamiento y un buen ancho de banda para su uso.
+                            <br /> -La pérdida del dispositivo hace que tus fondos sean irrecuperables.
+                          </div>
+                          <div
+                            class='tab-pane fade'
+                            id='list-settings'
+                            role='tabpanel'
+                            aria-labelledby='list-settings-list'
+                          >
+                            <div class='alert alert-info' role='alert'>
+                              <strong>¡Ventajas!</strong>
+                            </div>
+                            -Es de fácil acceso por todos los dispositivos, solo se requiere un navegador o una app que esté ligada a ese sitio web.
+                            <br /> -Si los fondos son perdidos, pueden ser recuperados.
+                            <br /> -El uso es totalmente amigable y seguro.
+                            <br />
+                            <br />
+                            <div class='alert alert-danger' role='alert'>
+                              <strong>Desventajas</strong>
+                            </div>
+                            -Irrupciones del servicio del sitio web, puede afectar las transacciones.
+                            <br /> -Si la página es hackeada, tus fondos pueden estar comprometidos.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <br />
+              <p class='wow fadeInUp' data-wow-delay='300ms'>
+                En conclusión, para la facilidad y
+                urgencia de obtener una dirección bitcoin de manera rápida y sencilla,
+                te recomiendo las billeteras Web.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='why-choose-us-area section-padding-80-0 clearfix'>
+    <div class='container'>
+      <div class='row'>
+        <div class='about-us-content mb-80'>
+          <h3 class='wow fadeInUp' data-wow-delay='100ms'>
+            Billeteras Web Multicripto Recomendadas
+          </h3>
+          <div class='line wow fadeInUp' data-wow-delay='200ms'></div>
+          <p class='wow fadeInUp' data-wow-delay='300ms'>
+            Te enlisto las billeteras que normalmente podrías usar, hay que diferenciar,
+            las wallets de las microwallets, las microwallets son billeteras que son rápidas de obtener
+            fondos mediante los faucets. Puedes hacer clic para registrarte. Es recomendable verificar tu usuario KYC
+            para tener mejores ventajas.
+          </p>
+        </div>
+        <div
+          class='col-sm-12 col-lg-4 single_gallery_item nature mb-30 wow fadeInUp'
+          data-wow-delay='100ms'
+        >
+          <h6 class='wow fadeInUp' data-wow-delay='100ms'>Coinbase - Para Empezar</h6>
+          <br />
+          <br />
+          <div class='single-portfolio-content'>
+            <img src='/img/core/base.png' alt='' />
+            <div class='hover-content'>
+              <a
+                href='https://www.coinbase.com/join/jimene_gxm'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                ¡Ir!
+              </a>
+            </div>
+          </div>
+          <br />
+          <p>
+            Es un exchange seguro y fácil de usar con una capacidad de uso de varias criptomonedas,
+            es recomendado por su versatilidad entre el envío y la recepción de las criptomonedas,
+            con la posbilidad de operar entre ellas, también tienes la posibilidad de ganar criptomonedas
+            novedosas sólo viendo videos.
+          </p>
+        </div>
+        <div
+          class='col-sm-12 col-lg-4 single_gallery_item nature mb-30 wow fadeInUp'
+          data-wow-delay='100ms'
+        >
+          <h6 class='wow fadeInUp' data-wow-delay='100ms'>
+            Airtm - Para retirar a tu bolsillo
+          </h6>
+          <br />
+          <br />
+          <br />
+          <div class='single-portfolio-content'>
+            <img src='/img/core/air.png' alt='' />
+            <div class='hover-content'>
+              <a
+                href='/financial/airtm'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                ¡Ir!
+              </a>
+            </div>
+          </div>
+          <br />
+          <br />
+          <p>
+            Airtm es una página destinada para el envío de dinero de cuentas bancarias y e-wallets de diversos tipos,
+            tiene la posibilidad de vender y comprar tus criptomonedas para transformarlos en dólares con comisiones
+            relativamente bajas, recomendado para nuevos clientes residentes en latinoamérica.
+          </p>
+        </div>
+        <div
+          class='col-sm-12 col-lg-4 single_gallery_item nature mb-30 wow fadeInUp'
+          data-wow-delay='100ms'
+        >
+          <h6 class='wow fadeInUp' data-wow-delay='100ms'>
+            FaucetPay - Recolector de SATs
+          </h6>
+          <br />
+          <br />
+          <br />
+          <div class='single-portfolio-content'>
+            <img src='/img/core/fauc.png' alt='' />
+            <div class='hover-content'>
+              <a
+                href='/financial/airtm/crypto'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                ¡Ir!
+              </a>
+            </div>
+          </div>
+          <br />
+          <p>
+            Es una microwallet destinada para la recepción y generación de bitcoins por faucets, recomendado para traders,
+            dedicados a la ofertas y con la posibilidad de multiplicar bitcoins con pequeños juegos al azar, Clica
+            <a rel='prefetch' href='/financial/crypto/faucets/' target='_blank' rel='noopener noreferrer'>aquí</a>
+            si quieres saber lo que son los faucets y empezar a ganar.
+          </p>
+        </div>
+        <div
+          class='col-sm-12 col-lg-4 single_gallery_item nature mb-30 wow fadeInUp'
+          data-wow-delay='100ms'
+        >
+          <h6 class='wow fadeInUp' data-wow-delay='100ms'>
+            AttonBank - Para Invertir y Ganar
+          </h6>
+          <br />
+          <br />
+          <br />
+          <br />
+          <div class='single-portfolio-content'>
+            <img src='/img/core/atton.png' alt='' />
+            <div class='hover-content'>
+              <a
+                rel='prefetch'
+                href='https://attonbank.com/registration/?affbank=8125360395315140'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                ¡Ir!
+              </a>
+            </div>
+          </div>
+          <br />
+          <br />
+          <p>
+            Attonbank es una alternativa para guardar todas tus criptomonedas, el cual te pagan un interes del 1% de lo
+            que tengas almacenado, transformando tus bitcoins en dólares instantaneamente y los deja en frío para que
+            lo puedas retirar un futuro sin la variación de la volatilidad de la misma moneda depositada.
+            Recomendable para invertir si tienes una buena cantidad de dinero.
+          </p>
+        </div>
+        <div
+          class='col-sm-12 col-lg-4 single_gallery_item nature mb-30 wow fadeInUp'
+          data-wow-delay='100ms'
+        >
+          <h6 class='wow fadeInUp' data-wow-delay='100ms'>
+            PAYEER - Un procesador de pagos óptimo
+          </h6>
+          <br />
+          <br />
+          <div class='single-portfolio-content'>
+            <img src='/img/core/blk.jpg' alt='' />
+            <div class='hover-content'>
+              <a
+                rel='prefetch'
+                href='/financial/airtm/crypto'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                ¡Ir!
+              </a>
+            </div>
+          </div>
+          <br />
+          <p>
+            Es una alternativa de PayPal, pero con su capacidad de almacenar criptomonedas,
+            puedes tener también tus divisas en manera de dólares, euros y rublos rusos, también
+            tiene la posibilidad de exchange y trade, se recomienda el uso para pagos seguros en diferentes
+            plataformas de comercio o de inversión.
+          </p>
+        </div>
+        <div
+          class='col-sm-12 col-lg-4 single_gallery_item nature mb-30 wow fadeInUp'
+          data-wow-delay='100ms'
+        >
+          <h6 class='wow fadeInUp' data-wow-delay='100ms'>
+            Uphold - Si tienes el navegador brave
+          </h6>
+          <br />
+          <br />
+          <div class='single-portfolio-content'>
+            <img src='/img/core/upho.png' alt='' />
+            <div class='hover-content'>
+              <a
+                href='https://uphold.com/es/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                ¡Ir!
+              </a>
+            </div>
+          </div>
+          <br />
+          <p>
+            Es una billetera con la capacidad de almacenamiento de diversas criptomonedas, incluyendo el Basic
+            Attention Token BAT, también el uso de monedas FIAT como el dólar, euro, etc.
+            Es importante que esta billetera se use con el navegador Brave por que los tokens que se generan, se depositan ahí.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <Donate />
+</CoreLayout>

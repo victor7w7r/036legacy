@@ -1,0 +1,45 @@
+---
+import CoreLayout from '@/core/layout/CoreLayout.astro';
+---
+
+<CoreLayout>
+  <section
+    class='breadcrumb-area bg-img bg-overlay jarallax'
+    style={`background-image: url(${'/img/core/1.jpg'})`}
+  >
+    <div class='container h-100'>
+      <div class='row h-100 align-items-center'>
+        <div class='col-12'>
+          <div class='breadcrumb-content text-center'>
+            <h2 class='page-title'>¡Ups!</h2>
+            <nav aria-label='breadcrumb'>
+              <ol class='breadcrumb justify-content-center'>
+                <li class='breadcrumb-item'>
+                  <a rel='prefetch' href='/'>
+                    <i class='icon_error-circle_alt'></i>
+                  </a>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='our-team-area section-padding-404'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-12'>
+          <div
+            class='section-heading text-center wow fadeInUp'
+            data-wow-delay='100ms'
+          >
+            <h2>Error 404</h2>
+            <br />
+            <p>La página que solicitaste, no está disponible o está restringida.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</CoreLayout>

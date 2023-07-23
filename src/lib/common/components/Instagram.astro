@@ -1,0 +1,50 @@
+---
+import InstagramItem from './InstagramItem.astro';
+
+const items = [
+  {
+    img: '/img/core/ig1.jpg',
+    url: 'https://www.instagram.com/p/B7w1d2Eh1Wx/'
+  },
+  {
+    img: '/img/core/ig2.jpg',
+    url: 'https://www.instagram.com/p/B-GBtwRhoYx/'
+  },
+  {
+    img: '/img/core/ig3.jpg',
+    url: 'https://www.instagram.com/p/B_V09kfBooO/'
+  },
+  {
+    img: '/img/core/ig4.jpg',
+    url: 'https://www.instagram.com/p/B_jErF0BxHO/'
+  },
+  {
+    img: '/img/core/ig5.jpg',
+    url: 'https://www.instagram.com/p/B3dmSsEBPHi/'
+  },
+  {
+    img: '/img/core/ig6.jpg',
+    url: 'https://www.instagram.com/p/B224t6-BEa9/'
+  }
+];
+---
+
+<section class='follow-area clearfix'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-12'>
+        <div class='section-heading text-center'>
+          <br /><br />
+          <h2>Instagram del Creador</h2>
+          <p>@victor7w7r</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='instragram-feed-area owl-carousel'>
+    {items.map(
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+      item => <InstagramItem img={item.img} url={item.url}/>
+    )}
+  </div>
+</section>

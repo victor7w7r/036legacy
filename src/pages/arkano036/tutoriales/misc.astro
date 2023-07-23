@@ -1,0 +1,26 @@
+---
+import YoutubeLayout from '@/youtube/layout/YoutubeLayout.astro';
+
+import Description from '@/youtube/components/Description.astro';
+import Heading from '@/youtube/components/Heading.astro';
+import Misc from '@/youtube/components/generators/Misc.astro';
+
+import as1 from '../../../assets/youtube/p5.jpg';
+---
+
+<YoutubeLayout>
+  <Heading
+    img={as1}
+    title='Miscelánea'
+    desc='Arkano036 | Tutoriales | Miscelánea'
+  />
+  <Description>
+    <br />
+    <br />
+    <br />
+    <h2>Otros Tutoriales</h2>
+    <br />
+    <p>Tutoriales sobre temas variados. </p>
+  </Description>
+  <Misc />
+</YoutubeLayout>

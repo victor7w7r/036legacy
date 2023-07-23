@@ -1,0 +1,185 @@
+---
+import CoreLayout from '@/core/layout/CoreLayout.astro';
+
+import Disponibility from '@/core/components/teaching/Disponibility.astro';
+import Description from '@/core/components/teaching/Description.astro';
+import Heading from '@/core/components/teaching/Heading.astro';
+import Reserve from '@/core/components/teaching/Reserve.astro';
+---
+
+<CoreLayout>
+  <Heading
+    img='/img/core/coll1.jpg'
+    title='Programación Orientada a Objetos'
+    body='Informática | Programación | Programación Orientada a Objetos'
+  />
+  <Disponibility>
+    <div class='alert alert-success' role='alert'>
+      <strong>¡Bien!</strong>
+      El curso está disponible para individual y en grupo.
+    </div>
+    <div class='alert alert-info' role='alert'>
+      <strong>¡Ten en cuenta!</strong> Este curso tiene prerequisitos
+      de aprendizaje.
+    </div>
+    <div class='alert alert-danger' role='alert'>
+      <strong>¡Rayos!</strong> Esta materia no tiene nada
+      que ver con Estructuras de Datos,
+      cualquier contenido relacionado con colas, pilas, no está disponible
+    </div>
+  </Disponibility>
+  <Description>
+    <p>
+      En un paradigma anterior a este, que es la programación estructurada, se enfoca el código como objetos
+      y de por sí el mismo código cobra vida, las variables se llaman atributos de un algo y las funciones
+      como el comportamiento de ese mismo 'algo'.
+    </p>
+    <p>
+      De por sí esto ayuda mucho para la interacción rápida e intuitiva con el cliente que requiere
+      el uso de ventanas, controles, eventos, conexiones, etc. Muchas cosas que la programación
+      modular no se puede hacer.
+    </p>
+    <p>
+      El lenguaje de programación de esta materia está disponible para C# o Java, dichos lenguajes
+      tienen una similitud casi simétrica como sintaxis, dependiendo de tus necesidades.
+    </p>
+    <br />
+    <p class='subtitle'>Prerrequisitos para Programación Orientada a Objetos</p>
+    <ul class='list-group'>
+      <li class='list-group-item'>Conocimiento del lenguaje de programación C en su totalidad.</li>
+      <li class='list-group-item'>Resolución de algoritmos y problemas.</li>
+      <li class='list-group-item'>Uos y acceso de elementos de estructuras.</li>
+    </ul>
+    <br />
+    <p class='subtitle'>Contenidos</p>
+    <br />
+    <div class='row'>
+      <div class='col-4'>
+        <div class='list-group' id='list-tab' role='tablist'>
+          <a
+            class='list-group-item list-group-item-action active'
+            id='list-home-list'
+            data-toggle='list'
+            href='#list-home'
+            role='tab' aria-controls='home'
+          >
+            Principios de diseño y técnicas avanzadas
+          </a>
+          <a
+            class='list-group-item list-group-item-action'
+            id='list-profile-list'
+            data-toggle='list'
+            href='#list-profile'
+            role='tab' aria-controls='profile'
+          >
+            Relacionamiento entre clases y control de excepciones
+          </a>
+          <a
+            class='list-group-item list-group-item-action'
+            id='list-messages-list'
+            data-toggle='list'
+            href='#list-messages'
+            role='tab' aria-controls='messages'
+          >
+            Programación Orientada a Eventos
+          </a>
+        </div>
+      </div>
+      <div class='col-8'>
+        <div class='tab-content' id='nav-tabContent'>
+          <div
+            class='tab-pane fade show active'
+            id='list-home'
+            role='tabpanel'
+            aria-labelledby='list-home-list'
+          >
+            -Transición de paradigma
+            <br /> -Visual Studio/Netbeans, Proyectos de consola
+            <br /> -Principios Generales
+            <br /> -Definición de clases, objetos, atributos y métodos
+            <br /> -Principíos de UML
+            <br />
+            <br /> -Tipos de datos primitivos y de referencia
+            <br /> -Constructores e instanciación
+            <br /> -Setters y Getters
+            <br /> -Encapsulamiento
+            <br /> -Polimorfismo
+            <br /> -Abstracción
+            <br /> -Interfaces de programación
+          </div>
+          <div
+            class='tab-pane fade'
+            id='list-profile'
+            role='tabpanel'
+            aria-labelledby='list-profile-list'
+          >
+            -Definición de excepción
+            <br /> -Excepciones y errores
+            <br /> -Tipos y clases de excepciones
+            <br />-Sintaxis de try, catch, finally
+            <br />-Lanzamiento de excepciones
+            <br />-Excepciones perzonalizadas
+            <br />
+            <br />
+            -Arreglos estáticos y dinámicos
+            <br />
+            -Arreglos de objetos
+            <br />
+            <br />
+            -Herencia: Definición, nomenclatura, reglas y ventajas
+            <br />
+            -Implementación de herencia
+          </div>
+          <div
+            class='tab-pane fade'
+            id='list-messages'
+            role='tabpanel'
+            ria-labelledby='list-messages-list'
+          >
+            -Diseño de ventanas en Java (Swing)
+            <br />
+            <br /> -Diseño de ventanas en C# (Windows Forms)
+            <br /> -Eventos: Definición y propiedades
+            <br /> -Manejo de clases con formularios de ventanas
+            <br /> -Jerarquía de herencia de formularios de ventanas
+            <br />
+            <br /> -Modelo, Vista y Controlador
+            <br /> -Controles: Tablas, Botones, Textos, etc.
+            <br /> -Librerías:  Inclusión y generación de librerías
+            <br /> -Librerías dinámicas y controles de usuario para C#
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <p>
+      El cambio de paradigma es importante para aprender este tipo de lenguajes de programación,
+      tendrás la capacidad de crear tus propios programas en estilo de ventanas con tus propios
+      controles incluidos.
+    </p>
+  </Description>
+  <Reserve />
+  <div class='alime-pager-area section-padding-80-50'>
+    <div class='container'>
+      <div class='row no-gutters'>
+        <div class='col-6'>
+          <div class='previous bg-img' style='background-image: url("/img/core/51.jpg")'>
+            <div class='overlay-content d-flex align-items-center justify-content-center'>
+              <a rel='prefetch' href='/class/struct' class='post-title'>Programación estructurada</a>
+              <a href='# ' class='previous-link'><i class='arrow_left'></i></a>
+            </div>
+          </div>
+        </div>
+        <div class='col-6'>
+          <div class='next bg-img' style='background-image: url("/img/core/53.jpg")'>
+            <div class='overlay-content d-flex align-items-center justify-content-center'>
+              <a rel='prefetch' href='/class/multimedia' class='post-title'>Edición Multimedia</a>
+              <a href='# ' class='next-link'><i class='arrow_right'></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</CoreLayout>

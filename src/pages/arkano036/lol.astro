@@ -1,0 +1,34 @@
+---
+import Description from '@/youtube/components/Description.astro';
+import Heading from '@/youtube/components/Heading.astro';
+import Lol from '@/youtube/components/generators/Lol.astro';
+
+import YoutubeLayout from '@/youtube/layout/YoutubeLayout.astro';
+
+import as1 from '../../assets/youtube/p11.jpg';
+---
+
+<YoutubeLayout>
+  <Heading
+    img={as1}
+    title='League of Legends'
+    desc='Arkano036 | LoL'
+  />
+  <Description>
+    <br />
+    <br />
+    <br />
+    <h2>GG WP</h2>
+    <br />
+    <p>
+      Sin nada más que decir, el MOBA con más jugadores del mundo,
+      pues solamente aquí hago mis tonteras de toda la vida.
+    </p>
+    <br />
+    <p>
+      Si el video no funciona o no está disponible, puedes hacer clic en el título
+      de cada video para redirigirte a YouTube
+    </p>
+  </Description>
+  <Lol />
+</YoutubeLayout>

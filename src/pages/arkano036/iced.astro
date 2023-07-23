@@ -1,0 +1,35 @@
+---
+import Description from '@/youtube/components/Description.astro';
+import Heading from '@/youtube/components/Heading.astro';
+import ICED from '@/youtube/components/generators/ICED.astro';
+
+import YoutubeLayout from '@/youtube/layout/YoutubeLayout.astro';
+
+import as1 from '../../assets/youtube/pCED.jpg';
+---
+
+<YoutubeLayout>
+  <Heading
+    img={as1}
+    title='Videos Antiguos'
+    desc='Arkano036 | iCED'
+  />
+  <Description>
+    <br />
+    <br />
+    <br />
+    <h2>Los Inicios de 036</h2>
+    <br />
+    <p>
+        Empecé mi canal desde 2010 definitivamente, pasando por varios nombres hasta llegar a Arkano036,
+        de por sí tengo los videos de mi adolescencia que, a pesar de que esos videos dan harto cringe,
+        tienen unos buenos recuerdos. Entre más bajes, el cringe va aumentando.
+    </p>
+    <br />
+    <p>
+        Si el video no funciona o no está disponible, puedes hacer
+        clic en el título de cada video para redirigirte a YouTube
+    </p>
+  </Description>
+  <ICED />
+</YoutubeLayout>

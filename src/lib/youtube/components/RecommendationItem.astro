@@ -1,0 +1,17 @@
+---
+type Props = { img: string, url: string };
+
+const { img, url } = Astro.props;
+---
+
+<div
+  class='col-12 col-sm-6 col-lg-3 single_gallery_item music mb-30 wow fadeInUp'
+  data-wow-delay='500ms'
+>
+  <div class='single-portfolio-content'>
+    <img src={img} alt='' />
+    <div class='hover-content video-icon'>
+      <a rel='prefetch' href={url}><i class='arrow_triangle-right'></i></a>
+    </div>
+  </div>
+</div>

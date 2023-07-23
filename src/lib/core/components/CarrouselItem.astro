@@ -1,0 +1,47 @@
+---
+type Props = {
+    img: string,
+    routerTitle: string,
+    body: string
+};
+
+const { img, routerTitle, body } = Astro.props;
+---
+
+<div
+  class='single-welcome-slide bg-img bg-overlay'
+  style={`background-image: url(${img})`}
+>
+  <div class='container h-100'>
+    <div class='row h-100 align-items-center'>
+      <div class='col-12 col-lg-8 col-xl-6'>
+        <div class='welcome-text'>
+          <div
+            class='accordion accordion-flush'
+            id='accordionFlushExample'
+          >
+            <h2 data-animation='fadeInDown' data-delay='900ms'>
+              <slot />
+            </h2>
+            <p data-animation='fadeInDown' data-delay='500ms'>
+              {body}
+            </p>
+            <div
+              class='hero-btn-group'
+              data-animation='fadeInDown'
+              data-delay='100ms'
+            >
+              <a
+                href='/info/changelog/'
+                rel='prefetch'
+                class='btn alime-btn mb-3 mb-sm-0 mr-4'
+              >
+                {routerTitle}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

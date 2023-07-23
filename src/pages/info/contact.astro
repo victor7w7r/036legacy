@@ -1,0 +1,103 @@
+---
+import CoreLayout from '@/core/layout/CoreLayout.astro';
+import Heading from '@/core/components/information/Heading.astro';
+---
+
+<CoreLayout>
+  <Heading img='/img/core/pCOT.jpg' title='Contáctanos' route='Contacto' />
+  <div class='contact-area section-padding-80-50'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-12 col-lg-6'></div>
+        <h2 class='contact-title mb-30'>¿Tus dudas? Adelante... </h2>
+      </div>
+      <div class='col-12 col-md-6 col-lg-3'>
+        <div class='contact-info mb-30'>
+          <p>Correo</p>
+          <a href='mailto:info@036studios.tech'>info@036studios.tech</a>
+        </div>
+      </div>
+    </div>
+    <div class='alert alert-success alert-dismissible fade show' id='enviado' role='alert'>
+      <strong>¡Enviado!</strong>
+      Tu mensaje ha sido enviado exitosamente. Te responderemos a tu correo en menos de 24 horas.
+      <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+        <span aria-hidden='true'>
+            &times;
+        </span>
+      </button>
+    </div>
+    <div class='alert alert-danger alert-dismissible fade show' id='error-spa' role='alert'>
+      <strong>¡ERROR!</strong> Rellena todos los campos para enviar.
+      <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+          <span aria-hidden='true'>
+              &times;
+          </span>
+      </button>
+    </div>
+    <div class='alert alert-danger alert-dismissible fade show' id='error-email' role='alert'>
+      <strong>¡ERROR!</strong> Correo electrónico no válido.
+      <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+        <span aria-hidden='true'>
+            &times;
+        </span>
+      </button>
+    </div>
+    <div class='alert alert-danger alert-dismissible fade show' id='error-type' role='alert'>
+      <strong>¡ERROR!</strong> Tu mensaje debe tener más de 70 caracteres.
+      <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+          <span aria-hidden='true'>
+            &times;
+          </span>
+      </button>
+    </div>
+    <div class='alime-contact-form mt-50'>
+      <h4 class='mb-30'>Mensaje Rápido</h4>
+      <form id='contacto'>
+        <div class='row'>
+          <div class='col-12 col-md-6'>
+            <input
+              type='text'
+              id='nick'
+              name='message-name'
+              class='form-control mb-30'
+              placeholder='Tu nick'
+            />
+          </div>
+          <div class='col-12 col-md-6'>
+            <input
+              type='email'
+              id='email'
+              name='message-email'
+              class='form-control mb-30'
+              placeholder='Correo'
+            />
+          </div>
+          <div class='col-12'>
+            <textarea
+              name='message'
+              id='mensaje'
+              class='form-control mb-30'
+              placeholder='Mensaje'
+            ></textarea>
+            <div
+              class='g-recaptcha'
+              data-sitekey='6LdHSWkaAAAAAELJQQ_bUVfGYPeIm_0t2HqDGe-V'
+              data-callback='recaptcha_callback'
+            ></div>
+            <br />
+          </div>
+          <div class='col-12'>
+            <button
+              type='submit'
+              id='submit-contact'
+              class='btn alime-btn btn-2 mt-15'
+              disabled
+            >Envíar
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</CoreLayout>

@@ -1,0 +1,180 @@
+---
+import CoreLayout from '@/core/layout/CoreLayout.astro';
+
+import Disponibility from '@/core/components/teaching/Disponibility.astro';
+import Description from '@/core/components/teaching/Description.astro';
+import Heading from '@/core/components/teaching/Heading.astro';
+import Reserve from '@/core/components/teaching/Reserve.astro';
+---
+
+<CoreLayout>
+  <Heading
+    img='/img/core/linear1.jpg'
+    title='Álgebra Lineal'
+    body='Matemáticas | Espacios Vectoriales | Transformaciones Lineales'
+  />
+  <Disponibility>
+    <div class='alert alert-success' role='alert'>
+      <strong>¡Bien!</strong>
+      El curso está disponible para individual y en grupo.
+    </div>
+    <div class='alert alert-info' role='alert'>
+      <strong>¡Ten en cuenta!</strong>
+      El contenido de esta materia es recomendable tomarlo junto con Cálculo Diferencial e Integral.
+    </div>
+    <div class='alert alert-warning' role='alert'>
+      <strong>¡Aviso!</strong>
+      El contenido de esta materia es subjetivo para cada docente, lo que se explica aquí,
+      se puede variar en pequeñas partes.
+    </div>
+  </Disponibility>
+  <Description>
+    <p>
+      Actualmente, en las universidades se dan cátedras de Matemática Superior, el paradigma de
+      esta materia es totalmente diferente a lo que se ha visto en matemáticas de colegio, sobre
+      todo en el contenido de Espacios y Subespacios Vectoriales, por el cual los docentes, suelen
+      impartir la materia de una manera mecánica y poco intuitiva.
+    </p>
+    <p>
+      El objetivo de enseñaza que se dará por aquí es de darte todos los conceptos de manera fácil y consolidada
+      para el manejo de matrices y vectores.
+    </p>
+    <p>
+      Mucho ojo que el contenido de esta materia es abstracta, puede que al
+      inicio sea algo confuso, pero es necesario comprenderlo.
+    </p>
+    <br />
+    <p class='subtitle'>Contenidos</p>
+    <br />
+    <div class='row'>
+      <div class='col-4'>
+        <div class='list-group' id='list-tab' role='tablist'>
+          <a
+            class='list-group-item list-group-item-action active'
+            id='list-home-list'
+            data-toggle='list'
+            href='#list-home'
+            role='tab'
+            aria-controls='home'
+          >
+            Matrices, Determinantes y Sistemas de Ecuaciones
+          </a>
+          <a
+            class='list-group-item list-group-item-action'
+            id='list-profile-list'
+            data-toggle='list'
+            href='#list-profile'
+            role='tab'
+            aria-controls='profile'
+          >
+            Espacios y Subespacios Vectoriales
+          </a>
+          <a
+            class='list-group-item list-group-item-action'
+            id='list-messages-list'
+            data-toggle='list'
+            href='#list-messages'
+            role='tab'
+            aria-controls='messages'
+          >
+            Transformaciones Lineales, Valores y Vectores Propios
+          </a>
+        </div>
+      </div>
+      <div class='col-8'>
+        <div class='tab-content' id='nav-tabContent'>
+          <div
+            class='tab-pane fade show active'
+            id='list-home'
+            role='tabpanel'
+            aria-labelledby='list-home-list'
+          >
+            -Matrices: Definiciones y propiedades
+            <br /> -Producto y Potencia de matrices
+            <br /> -Matriz de potencia enésima
+            <br /> -Clasificación de matrices
+            <br /> -Traza, escalonamiento de matrices y rango
+            <br />
+            <br /> -Determinantes: Definiciones y propiedades
+            <br /> -Determinantes de segundo y tercer orden: Método de Sarrus
+            <br /> -Determinantes de orden n
+            <br /> -Desarrollo por menores respecto a filas o columnas
+            <br /> -Matriz Inversa: Definiciones y propiedades
+            <br /> -Matriz Adjunta y Matriz Aumentada
+            <br />
+            <br /> -Sistemas de Ecuaciones Lineales: Definiciones y propiedades
+            <br /> -Sistemas inconsistentes, indeterminadas y de solución única
+            <br /> -Eliminación Gaussiana
+            <br /> -Gauss-Jordan
+            <br /> -Método de Cramer
+          </div>
+          <div
+            class='tab-pane fade'
+            id='list-profile'
+            role='tabpanel'
+            aria-labelledby='list-profile-list'
+          >
+            -Espacios Vectoriales: Definición y propiedades
+            <br /> -Subespacios Vectoriales: Propiedades
+            <br /> -Combinaciones Lineales
+            <br /> -Conjunto Generador y Subespacio Generado
+            <br /> -Dependencia e Independencia Lineal
+            <br /> -Bases y Dimensión
+            <br /> -Suma e Intersección de Subespacios
+            <br /> -Vectores Coordenados
+            <br />
+            <br /> -Espacios Euclideos: Definición de producto interno
+            <br /> -Norma, distancia y ángulo entre vectores
+            <br /> -Ortogonalidad, bases ortogonales y ortonormales
+            <br /> -Proyecciones ortonormales
+          </div>
+          <div
+            class='tab-pane fade'
+            id='list-messages'
+            role='tabpanel'
+            aria-labelledby='list-messages-list'
+          >
+            -Transformaciones Lineales: Definición y propiedades
+            <br /> -Matriz asociada, núcleo e imagen de una transformación
+            <br /> -Transformación uno-a-uno, sobre e isomorfismos
+            <br /> -Operaciones de Transformaciones, Composición de transformaciones
+            <br /> -Matriz de cambio de base
+            <br />
+            <br /> -Valores y Vectores propios: Definición y propiedades
+            <br /> -Polinomio caracteristico de una matriz: Obtención de valores y vectores propios
+            <br /> -Diagonalización: Obtención de matriz diagonalizables
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <p>
+      Recuerda que es mucho mejor para mí que sigas los temas de cálculo diferencial e integral
+      por que ciertos temas van incluidos en esta materia.
+    </p>
+  </Description>
+  <Reserve />
+  <div class='alime-pager-area section-padding-80-50'>
+    <div class='container'>
+      <div class='row no-gutters'>
+        <div class='col-6'>
+          <div class='previous bg-img' style='background-image: url("/img/core/coll1.jpg")'>
+            <div class='overlay-content d-flex align-items-center justify-content-center'>
+              <a rel='prefetch' href='/class/math' class='post-title'>Matemáticas de Colegio</a>
+              <a href='# ' class='previous-link'><i class='arrow_left'></i></a>
+            </div>
+          </div>
+        </div>
+        <div class='col-6'>
+          <div class='next bg-img' style='background-image: url("/img/core/54.jpg")'>
+            <div class='overlay-content d-flex align-items-center justify-content-center'>
+              <a rel='prefetch' href='/class/struct' class='post-title'>Programación Estructural</a>
+              <a href='# ' class='next-link'><i class='arrow_right'></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</CoreLayout>

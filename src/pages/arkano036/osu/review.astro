@@ -1,0 +1,35 @@
+---
+import YoutubeLayout from '@/youtube/layout/YoutubeLayout.astro';
+
+import Description from '@/youtube/components/Description.astro';
+import Heading from '@/youtube/components/Heading.astro';
+import Review from '@/youtube/components/generators/Review.astro';
+
+import as1 from '../../../assets/youtube/p13.jpg';
+---
+
+<YoutubeLayout>
+  <Heading
+    img={as1}
+    title='osu! Review Express'
+    desc='Arkano036 | osu! | Review'
+  />
+  <Description>
+    <br />
+    <br />
+    <br />
+    <h2>Un Curso hecho para ti</h2>
+    <br />
+    <p>
+      Si deseas empezar osu! este curso es para ti, tienes todos los tips, recomendaciones
+      para empezar este maravilloso mundo, que puedas ganar el mejor rendimiento y escalar de
+      manera satisfactoria en el ranking.
+    </p>
+    <br />
+    <p>
+      Si el video no funciona o no está disponible, puedes hacer clic en el título de
+      cada video para redirigirte a YouTube
+    </p>
+  </Description>
+  <Review/>
+</YoutubeLayout>

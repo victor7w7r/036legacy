@@ -1,0 +1,31 @@
+---
+import YoutubeLayout from '@/youtube/layout/YoutubeLayout.astro';
+
+import Description from '@/youtube/components/Description.astro';
+import Lyrics from '@/youtube/components/generators/Lyrics.astro';
+import Heading from '@/youtube/components/Heading.astro';
+
+import as1 from '../../../assets/youtube/p9.jpg';
+---
+
+<YoutubeLayout>
+  <Heading
+    img={as1}
+    title='Otros Lyrics'
+    desc='Arkano036 | Música | Covers'
+  />
+  <Description>
+    <br />
+    <br />
+    <br />
+    <h2>Algo surtido</h2>
+    <br />
+    <p>Créeme que te gustará.</p>
+    <br />
+    <p>
+      Si el video no funciona o no está disponible,
+      puedes hacer clic en el título de cada video para redirigirte a YouTube
+    </p>
+  </Description>
+  <Lyrics />
+</YoutubeLayout>

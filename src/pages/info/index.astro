@@ -1,0 +1,75 @@
+---
+import CoreLayout from '@/core/layout/CoreLayout.astro';
+
+import Heading from '@/core/components/Heading.astro';
+---
+
+<CoreLayout>
+  <Heading img='/img/core/pINFO.jpg' title='Información' route='Información' />
+  <section class='our-team-area section-padding-class'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-12'>
+          <div class='section-heading text-center wow fadeInUp' data-wow-delay='100ms'>
+            <h2>¿Tienes alguna duda?</h2>
+            <br />
+            <p>
+              Aquí puedes contactarme para cualquier cosa referente a lo que tú necesites.
+              Puedes revisar las notas de la aplicación para ver los planes a futuro y el
+              progreso de mi sitio web. Escríbeme en contacto para cualquier sugerencia que tú tengas.
+              También para ver sobre nosotros y de los que nos conozcan mucho más.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class='alime-blog-area section-padding-30-0 mb-50'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-12 col-sm-6 col-lg-4'>
+          <div class='single-post-area wow fadeInUpBig' data-wow-delay='100ms'>
+            <a href='# ' class='post-thumbnail'>
+              <img src='/img/core/pChangep.jpg' alt='' />
+            </a>
+            <a href='# ' class='btn post-catagory'>Información</a>
+            <div class='post-content'>
+              <div class='post-meta'></div>
+              <a rel='prefetch' href='/info/changelog' class='post-title'>
+                Notas de la aplicación
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class='col-12 col-sm-6 col-lg-4'>
+          <div class='single-post-area wow fadeInUpBig' data-wow-delay='400ms'>
+            <a rel='prefetch' href='/info/about' class='post-thumbnail'>
+              <img src='/img/core/pABOp.jpg' alt='' />
+            </a>
+            <a href='# ' class='btn post-catagory'>Información</a>
+            <div class='post-content'>
+              <div class='post-meta'> </div>
+              <a rel='prefetch' href='/info/about' class='post-title'>
+                  Sobre Nosotros
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class='col-12 col-sm-6 col-lg-4'>
+          <div class='single-post-area wow fadeInUpBig' data-wow-delay='700ms'>
+            <a href='# ' class='post-thumbnail'>
+              <img src='/img/core/pCOTp.jpg' alt='' />
+            </a>
+            <a href='# ' class='btn post-catagory'>Información</a>
+            <div class='post-content'>
+              <div class='post-meta'> </div>
+              <a rel='prefetch' href='/info/contact' class='post-title'>
+                Contáctanos
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</CoreLayout>

@@ -1,0 +1,66 @@
+<section class='why-choose-us-area bg-gray section-padding-80-0 clearfix'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-12'>
+        <div
+          class='section-heading text-center wow fadeInUp'
+          data-wow-delay='100ms'
+        >
+          <h2>¿te interesa?</h2>
+          <p>Reserva tus clases.</p>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-md-6 col-lg-6'>
+        <div
+          class='why-choose-us-content text-center mb-80 wow fadeInUp'
+          id='reserve-container'
+          data-wow-delay='100ms'
+        >
+          <div class='chosse-us-icon'>
+            <i class='fa fa-pencil-square-o' aria-hidden='true'></i>
+          </div>
+            <h4>Correo Electrónico</h4>
+            <p>
+              Envíame un correo electrónico,
+              dejándome tus requisitos y tus necesidades haciéndome clic aquí.
+            </p>
+        </div>
+      </div>
+      <div class='col-md-6 col-lg-6'>
+        <div
+          class='why-choose-us-content text-center mb-80 wow fadeInUp'
+          data-wow-delay='300ms'
+        >
+          <div class='chosse-us-icon'>
+            <i class='fa fa-gamepad' aria-hidden='true'></i>
+          </div>
+          <h4>Discord</h4>
+          <p>
+            Entra a mi canal de Discord, en la sección de
+            Solicitud de Clases para que puedas directamente solicitarlo.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='section-heading text-left wow fadeInUp' data-wow-delay='100ms'>
+        *Si eres miembro de Patreon,
+        tienes un descuento adicional para el canal de Discord*
+        <br /> *Antes de envíar un correo o solicitud para el canal de Discord, averiguar primero su disponibilidad*
+        <br /> *Caso contrario no se te será respondido*
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { $ } from 'carbonium';
+
+  const tab = (url: string) =>
+    (window.open(url, '_blank')! as Window).focus();
+
+  $('#reserve-container').onclick = () =>
+    tab('mailto:info@036studios.info?Subject=Clases%20Analisis%20Matematico')
+</script>

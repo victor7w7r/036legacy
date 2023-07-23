@@ -1,0 +1,123 @@
+<div class='comment-area section-padding-80'>
+  <div class='container'>
+    <div class='row justify-content-center'>
+      <div class='col-lg-9'>
+        <div class='comment_area clearfix'>
+          <ol><div class='listado'></div></ol>
+        </div>
+        <div class='alime-contact-form mt-50'>
+          <div
+            class='alert alert-success alert-dismissible fade show'
+            id='enviado'
+            role='alert'
+          >
+            <strong>¡Listo!</strong> Comentario publicado exitosamente.
+            <button
+              type='button'
+              class='close'
+              data-dismiss='alert'
+              aria-label='Close'
+            >
+              <span aria-hidden='true'>&times;</span>
+            </button>
+          </div>
+          <div
+            class='alert alert-danger alert-dismissible fade show'
+            id='error-spa'
+            role='alert'
+          >
+            <strong>¡ERROR!</strong> Rellena todos los campos para enviar.
+            <button
+              type='button'
+              class='close'
+              data-dismiss='alert'
+              aria-label='Close'
+            >
+              <span aria-hidden='true'>&times;</span>
+            </button>
+          </div>
+          <div
+            class='alert alert-danger alert-dismissible fade show'
+            id='error-email'
+            role='alert'
+          >
+            <strong>¡ERROR!</strong> Correo electrónico no válido.
+            <button
+              type='button'
+              class='close'
+              data-dismiss='alert'
+              aria-label='Close'
+            >
+              <span aria-hidden='true'>&times;</span>
+            </button>
+          </div>
+          <div
+            class='alert alert-danger alert-dismissible fade show'
+            id='error-type'
+            role='alert'
+          >
+            <strong>¡ERROR!</strong> Tu comentario debe tener más de 5 caracteres.
+            <button
+              type='button'
+              class='close'
+              data-dismiss='alert'
+              aria-label='Close'
+            >
+              <span aria-hidden='true'>&times;</span>
+            </button>
+          </div>
+          <br />
+          <h4 class='mb-30'>¿Te interesaría comentar?</h4>
+          <form id='comm-blog'>
+            <div class='row'>
+              <div class='col-12 col-md-6'>
+                <input
+                  type='text'
+                  name='message-name'
+                  id='nick-com'
+                  class='form-control mb-30'
+                  placeholder='Tu nick'
+                />
+              </div>
+                <div class='col-12 col-md-6'>
+                  <input
+                    type='email'
+                    name='message-email'
+                    id='mail-com'
+                    class='form-control mb-30'
+                    placeholder='Correo'
+                  />
+                </div>
+                <div class='col-12'>
+                  <textarea
+                    name='message'
+                    class='form-control mb-30'
+                    id='com-com'
+                    placeholder='Tu comentario'
+                  >
+                  </textarea>
+                </div>
+                <div
+                  class='g-recaptcha'
+                  data-sitekey='6LdHSWkaAAAAAELJQQ_bUVfGYPeIm_0t2HqDGe-V'
+                  data-callback='recaptcha_callback'
+                ></div>
+                <br />
+                <div class='col-12'>
+                  <br />
+                  <button
+                    type='submit'
+                    id='com-sub'
+                    class='btn alime-btn btn-2 mt-15'
+                    disabled
+                  >
+                    Envíar
+                  </button>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

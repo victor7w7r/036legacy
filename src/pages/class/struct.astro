@@ -1,0 +1,173 @@
+---
+import CoreLayout from '@/core/layout/CoreLayout.astro';
+
+import Disponibility from '@/core/components/teaching/Disponibility.astro';
+import Description from '@/core/components/teaching/Description.astro';
+import Heading from '@/core/components/teaching/Heading.astro';
+import Reserve from '@/core/components/teaching/Reserve.astro';
+---
+
+<CoreLayout>
+  <Heading
+    img='/img/core/prog1.jpg'
+    title='Programación Estructurada'
+    body='Informática | Programación | Fundamentos de Programación'
+  />
+  <Disponibility>
+    <div class='alert alert-success' role='alert'>
+      <strong>¡Bien!</strong>
+      El curso está disponible
+      para individual y en grupo.
+    </div>
+    <div class='alert alert-warning' role='alert'>
+      <strong>¡Aviso!</strong> Cualquier proyecto relacionado
+      con Fundamentos de Programación en C++ avisar con tiempo.
+    </div>
+    <div class='alert alert-danger' role='alert'>
+      <strong>¡Rayos!</strong> Esta materia no tiene nada que ver
+      con Estructuras de Datos, cualquier contenido relacionado con colas,
+      pilas, no está disponible.
+    </div>
+  </Disponibility>
+  <Description>
+    <p>
+      Desde temprana edad aprendí la programación, y es un campo de verdad diverso hoy en día,
+      con los fundamentos de programación y la programación modular te encaminará a varios paradigmas de
+      programación que podrás sacarle el máximo partido para tus estudios y tu futuro profesional.
+    </p>
+    <p>
+      El lenguaje de programación C te encaminará a que aprendas otros tipos de lenguajes
+      de programación que tienen similitud como Java, JavaScript, C#, C++, PHP, Python, etc.
+    </p>
+    <p>Tú lo que verás son algoritmos, pseudocódigos, estructuras de control y estructuras iteradas.</p>
+    <br />
+    <p class='subtitle'>Contenidos</p>
+    <br />
+    <div class='row'>
+      <div class='col-4'>
+        <div
+          class='list-group'
+          id='list-tab'
+          role='tablist'
+        >
+          <a
+            class='list-group-item list-group-item-action active'
+            id='list-home-list'
+            data-toggle='list'
+            href='#list-home'
+            role='tab'
+            aria-controls='home'
+          >
+            Algoritmos, Problemas y Operadores
+          </a>
+          <a
+            class='list-group-item list-group-item-action'
+            id='list-profile-list'
+            data-toggle='list'
+            href='#list-profile'
+            role='tab'
+            aria-controls='profile'
+          >
+            Estructuras de Control, Iteraciones, Funciones y Arreglos
+          </a>
+          <a
+            class='list-group-item list-group-item-action'
+            id='list-messages-list'
+            data-toggle='list'
+            href='#list-messages'
+            role='tab'
+            aria-controls='messages'
+          >
+            Manejo de Memoria, Programación estructurada y E/S
+          </a>
+        </div>
+      </div>
+      <div class='col-8'>
+        <div class='tab-content' id='nav-tabContent'>
+          <div
+            class='tab-pane fade show active'
+            id='list-home'
+            role='tabpanel'
+            aria-labelledby='list-home-list'
+          >
+            -Definición y característicasd de Algoritmos
+            <br /> -Algoritmos por Diagramas de Flujo
+            <br /> -Algoritmos por pseudocódigo
+            <br /> -Pruebas de escritorio
+            <br />
+            <br />-Tipos de datos
+            <br /> -Variables y constantes
+            <br /> -Operadores aritméticos y de asignación
+            <br /> -Operadores lógicos
+            <br /> -Precedencia de operadores
+            <br />
+            <br /> -Errores de sintáxis, semánticos y lógicos
+          </div>
+          <div
+            class='tab-pane fade'
+            id='list-profile'
+            role='tabpanel'
+            aria-labelledby='list-profile-list'
+          >
+            -IDE de C, bibliotécas y estructura de un programa en C
+            <br /> -Estructuras de control (if, else, switch)
+            <br /> -Estructuras Iteradas (do, while, for)
+            <br />
+            <br /> -Definición y prototipado de funciones
+            <br /> -Argumentos y parámetros
+            <br /> -Retorno de valores
+            <br /> -Recursividad
+            <br />
+            <br /> -Arreglos unidimensionales
+            <br /> -Arreglos multidimensionales
+            <br /> -Algoritmos de búsqueda y orden
+          </div>
+          <div
+            class='tab-pane fade'
+            id='list-messages'
+            role='tabpanel'
+            aria-labelledby='list-messages-list'
+          >
+            -Memoria estática y memoria dinámica
+            <br /> -Aritmética y operaciones entre punteros
+            <br /> -Inicialización de punteros con memoria dinámica
+            <br /> -Niveles de punteros
+            <br /> -Cadenas de caracteres
+            <br />
+            <br />-Estructura: Declaración, variables y acceso a miembros
+            <br />-Entrada y salida de archivos por texto plano
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <p>
+      Es mucho mejor que practiques ejercicios de programación en diferentes libros para que puedas
+      practicar la resolución de problemas de manera más óptima.
+    </p>
+  </Description>
+  <Reserve />
+  <div class='alime-pager-area section-padding-80-50'>
+    <div class='container'>
+      <div class='row no-gutters'>
+        <div class='col-6'>
+          <div class='previous bg-img' style='background-image: url("/img/core/linear1.jpg")'>
+            <div class='overlay-content d-flex align-items-center justify-content-center'>
+              <a rel='prefetch' href='/class/linear' class='post-title'>Álgebra Lineal</a>
+              <a href='# ' class='previous-link'><i class='arrow_left'></i></a>
+            </div>
+          </div>
+        </div>
+        <div class='col-6'>
+          <div class='next bg-img' style='background-image: url("/img/core/55.jpg")'>
+            <div class='overlay-content d-flex align-items-center justify-content-center'>
+              <a rel='prefetch' href='/class/objects' class='post-title'>Programación Orientada a Objetos</a>
+              <a href='# ' class='next-link'><i class='arrow_right'></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</CoreLayout>

@@ -1,0 +1,35 @@
+---
+import Covers from '@/youtube/components/generators/Covers.astro';
+import Description from '@/youtube/components/Description.astro';
+import Heading from '@/youtube/components/Heading.astro';
+
+import YoutubeLayout from '@/youtube/layout/YoutubeLayout.astro';
+
+import as1 from '../../../assets/youtube/p10.jpg';
+---
+
+<YoutubeLayout>
+  <Heading
+    img={as1}
+    title='Covers'
+    desc='Arkano036 | Música | Covers'
+  />
+  <Description>
+    <br />
+    <br />
+    <br />
+    <h2>Ukelele, Mi ukelele</h2>
+    <br />
+    <p>
+      A inicios de 2019 me he dedicado a la práctica del ukelele, con un nivel de acordes básicos,
+      puedo tocar algunas canciones que me agradan mucho, de artistas conocidos al inicio de los 2000 y
+      artistas ecuatorianos de estos días.
+    </p>
+    <br />
+    <p>
+      Si el video no funciona o no está disponible, puedes hacer clic
+      en el título de cada video para redirigirte a YouTube
+    </p>
+  </Description>
+  <Covers />
+</YoutubeLayout>

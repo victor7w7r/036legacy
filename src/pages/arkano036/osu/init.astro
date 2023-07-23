@@ -1,0 +1,34 @@
+---
+import YoutubeLayout from '@/youtube/layout/YoutubeLayout.astro';
+
+import Description from '@/youtube/components/Description.astro';
+import Init from '@/youtube/components/generators/Init.astro';
+import Heading from '@/youtube/components/Heading.astro';
+
+import as1 from '../../../assets/youtube/p17.jpg';
+---
+
+<YoutubeLayout>
+  <Heading
+    img={as1}
+    title='Inicios de osu!'
+    desc='Arkano036 | osu! | Init'
+  />
+  <Description>
+    <br />
+    <br />
+    <br />
+    <h2>Así empecé yo</h2>
+    <br />
+    <p>
+      Unos videos ya tanto viejos que da las impresión de lo 'sin manos' que era al inicio,
+      y después para ser lo que soy en este momento. Espero que te guste.
+    </p>
+    <br />
+    <p>
+      Si el video no funciona o no está disponible, puedes hacer clic en el título
+      de cada video para redirigirte a YouTube
+    </p>
+  </Description>
+  <Init />
+</YoutubeLayout>

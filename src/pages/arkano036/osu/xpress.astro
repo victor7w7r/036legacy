@@ -1,0 +1,29 @@
+---
+import YoutubeLayout from '@/youtube/layout/YoutubeLayout.astro';
+
+import Description from '@/youtube/components/Description.astro';
+import Heading from '@/youtube/components/Heading.astro';
+import Xpress from '@/youtube/components/generators/Xpress.astro';
+
+import as1 from '../../../assets/youtube/p14.jpg';
+---
+
+<YoutubeLayout>
+  <Heading img={as1} title='osu! Xpress Play' desc='Arkano036 | osu! | Xpress Play' />
+  <Description>
+    <br />
+    <br />
+    <br />
+    <h2>Todos mis plays, los más interesantes</h2> <br />
+    <p>
+      Para demostrarte que en este juego, he tenido mi skill para todos los modos del juego.
+      Con un formato interesante y agradable para que lo puedas ver.
+    </p>
+    <br />
+    <p>
+      Si el video no funciona o no está disponible, puedes hacer clic en el título de
+      cada video para redirigirte a YouTube
+    </p>
+  </Description>
+  <Xpress/>
+</YoutubeLayout>

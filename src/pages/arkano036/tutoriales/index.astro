@@ -1,0 +1,111 @@
+---
+import YoutubeLayout from '@/youtube/layout/YoutubeLayout.astro';
+
+import CounterAll from '@/youtube/components/CounterAll.astro';
+import Description from '@/youtube/components/Description.astro';
+import Heading from '@/youtube/components/Heading.astro';
+
+import { urlCovers } from '../../../library';
+
+import as1 from '../../../assets/youtube/p7.jpg';
+---
+
+<YoutubeLayout>
+  <Heading
+    img={as1}
+    title='Tutoriales'
+    desc='Arkano036 | Tutoriales'
+  />
+  <Description>
+    <br />
+    <br />
+    <br />
+    <h2>Tutoriales</h2>
+    <br />
+    <p>
+      Me he dedicado hace un tiempo sobre tutoriales de diferentes temas, más enfocados en el
+      área de Informática y de edición fotográfica que es el área que me especializo, también de video.
+      También tengo tutoriales simples sobre cubos de rubik de dimensiones 3x3, 4x4 y 5x5.
+    </p>
+  </Description>
+  <div class='about-us-area section-padding-80-0 clearfix'>
+    <div class='container'>
+      <div class='row align-items-center'>
+        <div class='col-12 col-lg-6'>
+          <div class='about-us-content mb-30'>
+            <h3 class='wow fadeInUp' data-wow-delay='100ms'>Categorías</h3>
+            <div class='line wow fadeInUp' data-wow-delay='200ms'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='alime-blog-area section-padding-30-0 mb-0'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-12 col-sm-6 col-lg-3'>
+          <div
+            class='single-post-area wow fadeInUpBig'
+            data-wow-delay='100ms'
+          >
+            <a href='# ' class='post-thumbnail'>
+              <img src={urlCovers('p1p')} alt='' />
+            </a>
+            <a href='# ' class='btn post-catagory'>Tutoriales</a>
+            <div class='post-content'>
+              <div class='post-meta'> </div>
+              <a rel='prefetch' href='/arkano036/tutoriales/rubik/' class='post-title'>
+                Cubos de Rubik
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class='col-12 col-sm-6 col-lg-3'>
+          <div class='single-post-area wow fadeInUpBig' data-wow-delay='400ms'>
+            <a rel='prefetch' href='/financial/crypto/' class='post-thumbnail'>
+              <img src={urlCovers('p3p')} alt='' />
+            </a>
+            <a href='# ' class='btn post-catagory'>Tutoriales</a>
+            <div class='post-content'>
+              <div class='post-meta'> </div>
+              <a rel='prefetch' href='/arkano036/tutoriales/multimedia/' class='post-title'>
+                  Edición Multimedia
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class='col-12 col-sm-6 col-lg-3'>
+          <div class='single-post-area wow fadeInUpBig' data-wow-delay='700ms'>
+            <a href='# ' class='post-thumbnail'>
+              <img src={urlCovers('p4p')} alt='' />
+            </a>
+            <a href='# ' class='btn post-catagory'>Tutoriales</a>
+            <div class='post-content'>
+              <div class='post-meta'> </div>
+              <a rel='prefetch' href='/arkano036/tutoriales/info/' class='post-title'>
+                Informática
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class='col-12 col-sm-6 col-lg-3'>
+          <div class='single-post-area wow fadeInUpBig' data-wow-delay='700ms'>
+            <a href='# ' class='post-thumbnail'>
+              <img src={urlCovers('p5p')} alt='' />
+            </a>
+            <a href='# ' class='btn post-catagory'>Tutoriales</a>
+            <div class='post-content'>
+              <div class='post-meta'> </div>
+              <a rel='prefetch' href='/arkano036/tutoriales/misc/' class='post-title'>
+                Miscelánea
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+</YoutubeLayout>

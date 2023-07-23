@@ -1,0 +1,305 @@
+---
+import CoreLayout from '@/core/layout/CoreLayout.astro';
+
+import Disponibility from '@/core/components/teaching/Disponibility.astro';
+import Description from '@/core/components/teaching/Description.astro';
+import Heading from '@/core/components/teaching/Heading.astro';
+import Reserve from '@/core/components/teaching/Reserve.astro';
+---
+
+<CoreLayout>
+  <Heading
+    img='/img/core/anal1.jpg'
+    title='Análisis Matemático'
+    body='Matemáticas | Cálculo Diferencial e Integral | Cálculo Vectorial'
+  />
+  <Disponibility>
+    <div class='alert alert-success' role='alert'>
+      <strong>¡Bien!</strong>
+      El curso está disponible para individual y en grupo.
+    </div>
+    <div class='alert alert-info' role='alert'>
+      <strong>¡Ten en cuenta!</strong>
+      Este curso tiene prerequisitos de aprendizaje.
+    </div>
+    <div class='alert alert-warning' role='alert'>
+      <strong>¡Ups!</strong>
+      Para temas de Análisis Vectorial y de varias variables, reservar las clases con tiempo y verifique si
+      sus dudas están bajo mi alcance de conocimiento.
+    </div>
+  </Disponibility>
+  <Description>
+    <p>
+      Actualmente, en las universidades se dan cátedras de Matemática Superior,
+      la docencia suele ser buena dependiendo de la mayoría de facultades de dichas instituciones,
+      pero existen otros que no tienen la competencia suficiente para impartir las materias.
+    </p>
+    <p>
+      Mi experiencia es alta para ejercicios, estrategia y consejos para diversos
+      ámbitos dentro de las materias de análisis.
+    </p>
+    <p>
+      Debes tener en cuenta que dependiendo de los temas que te listaré a continuación, tanto como el precio y
+      nivel de conocimiento pueden variar. Así como también en el cumplimiento de los prerrequisitos.
+    </p>
+    <br />
+    <p class='subtitle'>Prerrequisitos para Cálculo Diferencial e Integral</p>
+    <ul class='list-group'>
+      <li class='list-group-item'>
+        Factorización y fundamentos del álgebra.
+      </li>
+      <li class='list-group-item'>
+        Manejo de propiedades sobre exponentes, radicales y racionalización.
+      </li>
+      <li class='list-group-item'>
+        Funciones Algebráicas: análisis y estudio de funciones.
+      </li>
+      <li class='list-group-item'>
+        Propiedades de los logarítmos y funciones trascendentes.
+      </li>
+      <li class='list-group-item'>
+        Análisis Trigonométrico, identidades y funciones inversas.
+      </li>
+      <li class='list-group-item'>
+        Ecuaciones paramétricas y curvas polares.
+      </li>
+    </ul>
+    <br />
+    <p class='subtitle'>
+      Prerrequisitos para Análisis Vectorial y de Varias Variables, Ecuaciones Diferenciales Ordinarias
+    </p>
+    <ul class='list-group'>
+      <li class='list-group-item'>Cálculo Diferencial e Integral</li>
+      <li class='list-group-item'>Álgebra Lineal </li>
+    </ul>
+    <br />
+    <p class='subtitle'>Contenidos</p>
+    <br />
+    <div class='row'>
+      <div class='col-4'>
+        <div class='list-group' id='list-tab' role='tablist'>
+          <a
+            class='list-group-item list-group-item-action active'
+            id='list-home-list'
+            data-toggle='list'
+            href='#list-home'
+            role='tab'
+            aria-controls='home'
+          >
+            Cálculo Diferencial
+          </a>
+          <a
+            class='list-group-item list-group-item-action'
+            id='list-profile-list'
+            data-toggle='list'
+            href='#list-profile'
+            role='tab'
+            aria-controls='profile'
+          >
+            Cálculo Integral
+          </a>
+          <a
+            class='list-group-item list-group-item-action'
+            id='list-messages-list'
+            data-toggle='list'
+            href='#list-messages'
+            role='tab'
+            aria-controls='messages'
+          >
+            Funciones vectoriales y de varias variables
+          </a>
+          <a
+            class='list-group-item list-group-item-action'
+            id='list-settings-list'
+            data-toggle='list'
+            href='#list-settings'
+            role='tab'
+            aria-controls='settings'
+          >
+            Integrales múltiples y análisis vectorial
+          </a>
+          <a
+            class='list-group-item list-group-item-action'
+            id='list-sett2-list'
+            data-toggle='list'
+            href='#list-sett2'
+            role='tab'
+            aria-controls='sett2'
+          >
+            Ecuaciones Diferenciales Ordinarias
+          </a>
+        </div>
+      </div>
+      <div class='col-8'>
+        <div class='tab-content' id='nav-tabContent'>
+          <div
+            class='tab-pane fade show active'
+            id='list-home'
+            role='tabpanel'
+            aria-labelledby='list-home-list'
+          >
+            -Teoremas sobre límites
+            <br /> -Indeterminaciones
+            <br /> -Límites algebráicos
+            <br /> -Límites trascendentes
+            <br /> -Continuidad
+            <br />
+            <br /> -Definición de la derivada
+            <br /> -Reglas de derivación
+            <br /> -Regla de la cadena
+            <br /> -Derivación de funciones implícitas
+            <br /> -Derivación de funciones trigonométricas
+            <br /> -Derivación de funciones exponenciales
+            <br /> -Derivación logarítmica
+            <br /> -Derivación de curvas paramétricas y polares
+            <br /> -Derivadas de orden superior. Derivada enésima
+            <br />
+            <br /> -Ecuación de la recta tangente y normal
+            <br /> -Ángulo entre curvas
+            <br /> -Método de Newton-Raphson
+            <br /> -Límites por la Regla de L'Hopital
+            <br /> -Análisis y trazado de curvas con la derivada
+            <br /> -Diferenciales
+            <br />
+          </div>
+          <div
+            class='tab-pane fade'
+            id='list-profile'
+            role='tabpanel'
+            aria-labelledby='list-profile-list'
+          >
+            -Integral Indefinida: significado geométrico
+            <br /> -Integral Definida: significado geométrico
+            <br />
+            <br /> -Integrales Inmediatas
+            <br /> -Técnica de sustitución
+            <br /> -Integración de funciones trigonométricas
+            <br /> -Integración por partes, e integrales recursivas
+            <br /> -Integración de trinomios
+            <br /> -Sustitución Trigonométrica
+            <br /> -Integración de funciones racionales y fracciones parciales
+            <br /> -Sustitución de Weierstrass
+            <br /> -Integración de funciones irracionales
+            <br /> -Integrales binomias o del binomio diferencial (Chebyshev)
+            <br />
+            <br /> -Propiedades de la integral definida
+            <br /> -Integrales Impropias
+            <br />
+            <br /> -Cálculo de areas planas en coordenadas rectangulares, paramétricas y polares
+            <br /> -Cálculo de longitudes de arco en coordenadas rectangulares, paramétricas y polares
+            <br /> -Cálculo de solidos de revolución: Área y Volúmenes
+          </div>
+          <div
+            class='tab-pane fade'
+            id='list-messages'
+            role='tabpanel'
+            aria-labelledby='list-messages-list'
+          >
+            -Cálculo vectorial: Intuición de espacios euclideos
+            <br /> -Producto escalar y producto cruz entre vectores
+            <br /> -Rectas y planos en el espacio
+            <br /> -Ángulo entre dos planos
+            <br />
+            <br /> -Funciones vectoriales: Definiciones básicas, límites, continuidad
+            <br /> -Derivación e Integración de funciones vectoriales.
+            <br /> -Vector tangente, normal y osculador.
+            <br />
+            <br /> -Funciones de varias variables: Curvas de nivel, límites y continuidad
+            <br /> -Derivadas parciales, regla de la cadena, derivación implícita y derivadas de orden superior
+            <br /> -Derivada direccional y vector gradiente
+            <br /> -Plano tangente y recta normal a una superficie
+            <br /> -Máximos, mínimos, valores extremos y puntos de silla
+            <br /> -Multiplicadores de Lagrange
+            <br />
+          </div>
+          <div
+            class='tab-pane fade'
+            id='list-settings'
+            role='tabpanel'
+            aria-labelledby='list-settings-list'
+          >
+            -Integrales Dobles
+            <br /> -Cambio de variable y cambio a coordenadas polares, El Jacobiano
+            <br /> -Aplicaciones de la Integral Doble: Volumen, area, masa, momentos y centroides
+            <br />
+            <br /> -Integrales Triples
+            <br /> -Cambio de variable y cambio a coordenadas polares, El Jacobiano
+            <br /> -Aplicaciones de la Integral Triple: Volumen, area, masa, momentos y centroides
+            <br />
+            <br /> -Campos vectoriales: Conservativos, rotacional y divergencia
+            <br /> -Integrales de Linea: en campos escalares y vectoriales
+            <br /> -Teorema de Green
+            <br /> -Parametrización de superficies
+            <br /> -Integrales de Superficie: en campos escalares y vectoriales
+            <br /> -Teorema de Stokes
+            <br /> -Teorema de la divergencia
+            <br />
+          </div>
+          <div
+            class='tab-pane fade'
+            id='list-sett2'
+            role='tabpanel'
+            aria-labelledby='list-sett2-list'
+          >
+            - Ecuaciones Diferenciales de primer orden: Definiciones y Condición Inicial
+            <br /> - Integración directa, ecuaciones separables
+            <br /> - Ecuaciones de la forma y'=f(ax+by+c)
+            <br /> - Ecuaciones diferenciales homogéneas
+            <br /> - Ecuaciones diferenciales reducibles a homogéneas
+            <br /> - Ecuaciones diferenciales lineales
+            <br /> - Ecuaciones diferenciales de Bernoulli
+            <br /> - Ecuaciones diferenciales de Riccati
+            <br /> - Ecuaciones diferenciales exactas y factor integrante
+            <br /> - Ecuaciones dadas en forma no normal: Lagrange y Clairaut
+            <br />
+            <br /> - Ecuaciones Diferenciales Lineales de orden superior: Valores en la frontera
+            <br /> - Dependencia e independencia lineal: Determinante de Wronski
+            <br /> - Operador diferencial, linealidad, superposición y homogenaidad
+            <br /> - Reducción de orden, variable ausente
+            <br /> - Ecuaciones Diferenciales Lineales con coeficientes constantes
+            <br /> - Ecuaciones Diferenciales Lineales con coeficientes variables
+            <br /> - Sucesuiones y Series: numéricas, funciones, potencias
+            <br /> - Método de resolución por serie de potencias para EDO's Lineales
+            <br />
+            <br /> - Transformada de laplace: Definiciones y propiedades
+            <br /> - Transformada de laplace de derivadas, integrales, funciones periódicas
+            <br /> - Teorema de desplazamiento, de convolución
+            <br /> - Función impulso, función delta de Dirac.
+            <br /> - Sistemas de Ecuaciones diferenciales lineales
+            <br /> - Método de Eliminación, Transformada de Laplace
+            <br /> - Eigenvalores (Valores y Vectores Propios)
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <p>
+      Recuerda que es mucho mejor para mí que sepas todos los prerequisitos para no consumir tiempo adicional
+      que podrías usarlo para avanzar en los temas posteriores.
+    </p>
+  </Description>
+  <Reserve />
+  <div class='alime-pager-area section-padding-80-50'>
+    <div class='container'>
+      <div class='row no-gutters'>
+        <div class='col-6'>
+          <div class='previous bg-img' style='background-image: url("/img/core/59.jpg")'>
+            <div class='overlay-content d-flex align-items-center justify-content-center'>
+              <a rel='prefetch' href='/class/design' class='post-title'>Diseño Web</a>
+              <a href='# ' class='previous-link'><i class='arrow_left'></i></a>
+            </div>
+          </div>
+        </div>
+        <div class='col-6'>
+          <div class='next bg-img' style='background-image: url("/img/core/57.jpg")'>
+            <div class='overlay-content d-flex align-items-center justify-content-center'>
+              <a rel='prefetch' href='/class/math' class='post-title'>Matemáticas de Colegio</a>
+              <a href='# ' class='next-link'><i class='arrow_right'></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</CoreLayout>

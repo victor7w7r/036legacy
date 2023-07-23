@@ -1,0 +1,31 @@
+---
+import YoutubeLayout from '@/youtube/layout/YoutubeLayout.astro';
+
+import Description from '@/youtube/components/Description.astro';
+import Heading from '@/youtube/components/Heading.astro';
+import Touhou from '@/youtube/components/generators/Touhou.astro';
+
+import as1 from '../../../assets/youtube/p8.jpg';
+---
+
+<YoutubeLayout>
+  <Heading img={as1} title='Touhou' desc='Arkano036 | Música | Touhou' />
+  <Description>
+    <br />
+    <br />
+    <br />
+    <h2>¿Y este interés?</h2>
+    <br />
+    <p>
+      El videojuego osu! está plagado de estas canciones, compuestas por el genio
+      ZUN y diferentes grupos que se dedican a la creación musical para el videojuego Touhou.
+      Las letras son muy agradables de leer y la música es muy buena para oír.
+    </p>
+    <br />
+    <p>
+      Si el video no funciona o no está disponible, puedes hacer clic en el título
+      de cada video para redirigirte a YouTube
+    </p>
+  </Description>
+  <Touhou/>
+</YoutubeLayout>

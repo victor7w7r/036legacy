@@ -1,0 +1,31 @@
+---
+import Header from '@/core/components/Header.astro';
+import Searchbox from '@/common/components/Searchbox.html';
+import Chatbox from '@/common/components/Chatbox.astro';
+import Footer from '@/common/components/Footer.astro';
+---
+
+<!DOCTYPE html>
+<html lang='es-MX'>
+  <head>
+    <meta charset='UTF-8' />
+    <link rel='icon' href='/favicon.png' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta name='theme-color' content='#000000' />
+    <title>036legacy</title>
+  </head>
+  <body>
+    <Header />
+    <Searchbox />
+    <slot />
+    <Chatbox />
+    <Footer />
+  </body>
+  <style lang='scss'>@import '../scss/036.scss';</style>
+  <script is:inline src='/js/jquery.min.js'></script>
+  <script is:inline src='/js/alime.bundle.js'></script>
+  <script is:inline src='/js/popper.min.js'></script>
+  <script is:inline src='/js/default-assets/active.js'></script>
+  <script is:inline src='https://kit.fontawesome.com/06c35ed991.js'></script>
+  <script is:inline src='/js/bootstrap.min.js'></script>
+</html>

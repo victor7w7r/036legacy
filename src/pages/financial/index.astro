@@ -1,0 +1,79 @@
+---
+import CoreLayout from '@/core/layout/CoreLayout.astro';
+import Donate from '@/common/components/Donate.astro';
+import Heading from '@/core/components/financial/Heading.astro';
+---
+
+<CoreLayout>
+  <Heading
+    img='/img/core/finn1.jpg'
+    title='036 Financial: Dinero en Internet'
+    desc='Financial'
+  />
+  <section class='our-team-area section-padding-class'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-12'>
+          <div class='section-heading text-center wow fadeInUp' data-wow-delay='100ms'>
+            <h2>Mis experiencias, te las transmito</h2>
+            <br />
+            <p>
+              En este conjunto de páginas, te explico mi estadía dentro del aprendizaje en el ámbito
+              financiero en  línea, maneras útiles y rentables por cada monedita que ganes, te lo lleves
+              a tu bolsillo físico. Algunos métodos pueden que te sirvan, otros no. Antes de proceder,
+              es necesario que tú tengas una cuenta bancaria en tu país, se usará AirTM para el retiro y
+              transferencia de dinero. También aprenderás nociones básicas de criptomonedas y trading.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class='alime-blog-area section-padding-30-0 mb-50'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-12 col-lg-6'>
+          <div class='single-post-area wow fadeInUpBig' data-wow-delay='100ms'>
+            <a href='# ' class='post-thumbnail'>
+              <img src='/img/core/airtm.png' alt='' />
+            </a>
+            <a href='# ' class='btn post-catagory'>Dinero</a>
+            <div class='post-content'>
+              <div class='post-meta'></div>
+              <a rel='prefetch' href='/financial/airtm' class='post-title'>AirTM</a>
+            </div>
+          </div>
+        </div>
+        <div class='col-12 col-sm-6 col-lg-3'>
+          <div class='single-post-area wow fadeInUpBig' data-wow-delay='400ms'>
+            <a rel='prefetch' href='/class/college' class='post-thumbnail'>
+              <img src='/img/core/bit-logo.jpg' alt='' />
+            </a>
+            <a href='# ' class='btn post-catagory'>Dinero</a>
+            <div class='post-content'>
+              <div class='post-meta'></div>
+                <a rel='prefetch' href='/financial/crypto' class='post-title'>
+                  Criptomonedas
+                </a>
+            </div>
+          </div>
+        </div>
+        <div class='col-12 col-sm-6 col-lg-3'>
+          <div class='single-post-area wow fadeInUpBig' data-wow-delay='700ms'>
+            <a href='# ' class='post-thumbnail'>
+              <img src='/img/core/birr-logo.jpg' alt='' />
+            </a>
+            <a href='# ' class='btn post-catagory'>Dinero</a>
+            <div class='post-content'>
+              <div class='post-meta'></div>
+              <a rel='prefetch' href='/financial/trading' class='post-title'>
+                Trading
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <Donate />
+</CoreLayout>

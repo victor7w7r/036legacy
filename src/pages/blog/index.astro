@@ -1,0 +1,41 @@
+---
+import CoreLayout from '@/core/layout/CoreLayout.astro';
+
+import Heading from '@/core/components/Heading.astro';
+import Instagram from '@/common/components/Instagram.astro';
+---
+
+<CoreLayout>
+  <Heading img='/img/core/blog.jpg' title='Últimos Blogs' route='Blog' />
+  <div class='alime-blog-area section-padding-80-0 mb-70'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-lg-3 col-md-3 col-sm-6'></div>
+        <div class='col-lg-7 col-md-3 col-sm-6'>
+          <div
+            class='single-post-area wow fadeInUpBig'
+            data-wow-delay='100ms'
+          >
+            <a href='# ' class='post-thumbnail'>
+              <img src='/img/core/blog.jpg' alt='' />
+            </a>
+            <div class='post-content'>
+              <div class='post-meta'>
+                <a href='# '>Mayo 13, 2020</a>
+              </div>
+              <a
+                href='/blog/may2020'
+                rel='prefetch'
+                class='post-title'
+              >
+                Mi Primer Blog (Bienvenido a mi Sitio Web)
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class='col-lg-4 col-md-3 col-sm-6'></div>
+      </div>
+    </div>
+  </div>
+  <Instagram />
+</CoreLayout>

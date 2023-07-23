@@ -1,0 +1,198 @@
+---
+import CoreLayout from '@/core/layout/CoreLayout.astro';
+
+import Disponibility from '@/core/components/teaching/Disponibility.astro';
+import Description from '@/core/components/teaching/Description.astro';
+import Heading from '@/core/components/teaching/Heading.astro';
+import Reserve from '@/core/components/teaching/Reserve.astro';
+---
+
+<CoreLayout>
+  <Heading
+    img='/img/core/web1.jpg'
+    title='Diseño Web'
+    body='Informática | Diseño Web | HTML/CSS/JS'
+  />
+  <Disponibility>
+    <div class='alert alert-success' role='alert'>
+      <strong>¡Bien!</strong>
+      El curso está disponible para individual y en grupo.
+    </div>
+    <div class='alert alert-info' role='alert'>
+      <strong>¡Ten en cuenta!</strong>
+      Este curso tiene prerequisitos de aprendizaje
+    </div>
+    <div class='alert alert-danger' role='alert'>
+      <strong>¡Ups!</strong>
+      No ofrezco encargos ni
+      trabajos para sitios web.
+    </div>
+  </Disponibility>
+  <Description>
+    <p>
+      Es cierto, cualquiera puede realizar su sitio web, de manera didáctica e intuitiva con las diferentes
+      herramientas y aplicaciones que da internet, que obviamente no está nada mal
+      y es una oportunidad que todos deben aprovechar.
+    </p>
+    <p>
+      Pero puede que haya casos en que necesites agregar widgets de manera manual, control de formularios e
+      inserción de código de API, o claro, puedes crear tu página web desde plantillas HTML, para esto necesitas
+      saber entornos de vistas, programación y maquetado.
+    </p>
+    <p>
+      El uso de entornos de desarrollo pueden variar, se usará brackets o Adobe Dreamweaver para el entendimiento.
+    </p>
+    <br />
+    <p class='subtitle'>Prerrequisitos para Diseño Web</p>
+    <ul class='list-group'>
+      <li class='list-group-item'>Programación Estructural</li>
+    </ul>
+    <br />
+    <p class='subtitle'>Contenidos</p>
+    <br />
+    <div class='row'>
+      <div class='col-4'>
+        <div class='list-group' id='list-tab' role='tablist'>
+          <a
+            class='list-group-item list-group-item-action active'
+            id='list-home-list'
+            data-toggle='list'
+            href='#list-home'
+            role='tab'
+            aria-controls='home'
+          >
+            Etiquetado Web (HTML)
+          </a>
+          <a
+            class='list-group-item list-group-item-action'
+            id='list-profile-list'
+            data-toggle='list'
+            href='#list-profile'
+            role='tab'
+            aria-controls='profile'
+          >
+            Estilos en Cascada (CSS)
+          </a>
+          <a
+            class='list-group-item list-group-item-action'
+            id='list-messages-list'
+            data-toggle='list'
+            href='#list-messages'
+            role='tab'
+            aria-controls='messages'>
+            Scripting (JS)
+          </a>
+          <a
+            class='list-group-item list-group-item-action'
+            id='list-settings-list'
+            data-toggle='list'
+            href='#list-settings'
+            role='tab'
+            aria-controls='settings'>
+            Server Side (PHP)
+          </a>
+        </div>
+      </div>
+      <div class='col-8'>
+        <div class='tab-content' id='nav-tabContent'>
+          <div
+            class='tab-pane fade show active'
+            id='list-home'
+            role='tabpanel'
+            aria-labelledby='list-home-list'
+          >
+            -Adobe Dreamweaver: Primeras vistas
+            <br /> -brackets: Primeras vistas
+            <br />
+            <br /> -HTML básico
+            <br /> -Formatos de texto y estilos
+            <br /> -Contenedores y estructuras de maquetación
+            <br /> -Etiquetado y tipos de etiquetas
+            <br />
+            <br /> -Forumarios HTML
+            <br /> -Elementos del formulario
+            <br /> -Sistemas de Gestión de Contenidos
+          </div>
+          <div
+            class='tab-pane fade'
+            id='list-profile'
+            role='tabpanel'
+            aria-labelledby='list-profile-list'
+          >
+            -Hojas de estilos en cascada: Sintaxis
+            <br /> -Elementos y propiedades
+            <br /> -Grids y tipografías
+            <br /> -Alertas, botones, contenedores
+            <br /> -Plantillas HTML
+            <br /> -Vinculación con páginas HTML
+            <br />
+          </div>
+          <div
+            class='tab-pane fade'
+            id='list-messages'
+            role='tabpanel'
+            aria-labelledby='list-messages-list'
+          >
+            -Javascript: Comparación con los lenguajes Java y C
+            <br /> -Operadores y expresiones
+            <br /> -Tipos de datos, declaración de variables
+            <br /> -Estructuras de control
+            <br />
+            <br /> -Eventos
+            <br /> -Conversiones
+            <br /> -Arreglos
+            <br /> -Funciones
+            <br />
+            <br /> -Funciones de comunicación con HTML y DOM
+            <br /> -Libr /ería JQuery: Eventos y sintaxis
+          </div>
+          <div
+            class='tab-pane fade'
+            id='list-settings'
+            role='tabpanel'
+            aria-labelledby='list-settings-list'
+          >
+            -PHP: Definición y uso en el ámbito de Back-End
+            <br /> -Sintaxis y semánticas
+            <br /> -Variables, constantes y tipos de datos
+            <br /> -Operadores y sentencias de control
+            <br /> -Funciones
+            <br /> -Arrays de número indexado
+            <br /> -Formularios con conexión a PHP (GET, POST)
+            <br /> -Conectividad a Base de Datos (mysqli)
+            <br /> -Creación de CRUDS
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <p>
+      Para que todo sea más entendible, se necesita aprender lenguajes de programación
+      para familiarizarse con los sintaxis propuestos.
+    </p>
+  </Description>
+  <Reserve />
+  <div class='alime-pager-area section-padding-80-50'>
+    <div class='container'>
+      <div class='row no-gutters'>
+        <div class='col-6'>
+          <div class='previous bg-img' style='background-image: url("/img/core/editi1.jpg")'>
+            <div class='overlay-content d-flex align-items-center justify-content-center'>
+              <a rel='prefetch' href='/class/multimedia' class='post-title'>Edición Multimedia</a>
+              <a href='# ' class='previous-link'><i class='arrow_left'></i></a>
+            </div>
+          </div>
+        </div>
+        <div class='col-6'>
+          <div class='next bg-img' style='background-image: url("/img/core/anal1.jpg")'>
+            <div class='overlay-content d-flex align-items-center justify-content-center'>
+              <a rel='prefetch' href='/class/analysis' class='post-title'>Análisis Matemático</a>
+              <a href='# ' class='next-link'><i class='arrow_right'></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</CoreLayout>
