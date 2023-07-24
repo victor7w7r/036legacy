@@ -36,6 +36,8 @@ jobs:
         run: pnpm i
       - name: Build
         run: pnpm build
+      - name: Add SSG file
+        run: touch dist/.nojekyll
       - name: Deploying...
         uses: JamesIves/github-pages-deploy-action@v4
         with:
