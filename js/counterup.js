@@ -1,0 +1,1 @@
+!function(e){"use strict";e(document).ready((function(){e(".counter").counterUp({delay:10,time:1e4})}))}(jQuery);

@@ -1,0 +1,4 @@
+import{e as o}from"./hoisted.d6e6b0a8.js";const n=(i,p,t,c,e)=>window.open(i,p,`tooPlbar=no, location=no, directories=no, status=no, menubar=no,
+      crollbars=no, resizable=no, copyhistory=no,
+      width=${c}, height=${e}, top=${t.top.outerHeight/2+t.top.screenY-e/2},
+      left=${t.top.outerWidth/2+t.top.screenX-c/2}`);o("#brave").onclick=()=>window.open("https://brave.com/stu660","_blank");o("#mine").onclick=()=>window.open("https://cb.run/victor7w7r","_blank");o("#paypal").onclick=()=>n("http://paypal.me/arkano036/","test",window,800,600);o("#bitcoin").onclick=()=>n("https://blockchain.info/address/35QcBjNwr7S5f8taxb4ZPHXTY35kAXTyLq","test",window,800,600);o("#litecoin").onclick=()=>n("https://blockchair.com/es/litecoin/address/MUguoM2jXCVGaJB5GUygHHjj764H2NBEcN","test",window,800,600);o("#patreon").onclick=()=>window.open("https://www.patreon.com/036studios","_blank");

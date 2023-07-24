@@ -1,0 +1,1 @@
+function tab(n){window.open(n,"_blank").focus()}
