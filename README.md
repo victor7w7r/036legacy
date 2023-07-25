@@ -2,8 +2,6 @@
 
 Stio web antiguo, revisitado y re-escrito para Astro.
 
-**[Pruébalo aquí](https://victor7w7r.github.io/036legacy/)**
-
 ![Alt text](brandwhite.png?raw=true 'Title')
 
 ## IMPORTANTE
