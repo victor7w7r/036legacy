@@ -9,7 +9,7 @@ import Heading from '@/core/components/information/Heading.astro';
     <div class='container'>
       <div class='row'>
         <div class='col-12 col-lg-6'></div>
-        <h2 class='contact-title mb-30'>¿Tus dudas? Adelante... </h2>
+        <h2 class='contact-title mb-30'>¿Tus dudas? Adelante...</h2>
       </div>
       <div class='col-12 col-md-6 col-lg-3'>
         <div class='contact-info mb-30'>
@@ -18,37 +18,66 @@ import Heading from '@/core/components/information/Heading.astro';
         </div>
       </div>
     </div>
-    <div class='alert alert-success alert-dismissible fade show' id='enviado' role='alert'>
+    <div
+      class='alert alert-success alert-dismissible fade show'
+      id='enviado'
+      role='alert'
+    >
       <strong>¡Enviado!</strong>
-      Tu mensaje ha sido enviado exitosamente. Te responderemos a tu correo en menos de 24 horas.
-      <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-        <span aria-hidden='true'>
-            &times;
-        </span>
+       Tu mensaje ha sido enviado exitosamente. Te responderemos a tu correo en
+      menos de 24 horas.
+      <button
+        type='button'
+        class='close'
+        data-dismiss='alert'
+        aria-label='Close'
+      >
+        <span aria-hidden='true'> &times;</span>
       </button>
     </div>
-    <div class='alert alert-danger alert-dismissible fade show' id='error-spa' role='alert'>
+    <div
+      class='alert alert-danger alert-dismissible fade show'
+      id='error-spa'
+      role='alert'
+    >
       <strong>¡ERROR!</strong> Rellena todos los campos para enviar.
-      <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-          <span aria-hidden='true'>
-              &times;
-          </span>
+      <button
+        type='button'
+        class='close'
+        data-dismiss='alert'
+        aria-label='Close'
+      >
+        <span aria-hidden='true'> &times;</span>
       </button>
     </div>
-    <div class='alert alert-danger alert-dismissible fade show' id='error-email' role='alert'>
+    <div
+      class='alert alert-danger alert-dismissible fade show'
+      id='error-email'
+      role='alert'
+    >
       <strong>¡ERROR!</strong> Correo electrónico no válido.
-      <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-        <span aria-hidden='true'>
-            &times;
-        </span>
+      <button
+        type='button'
+        class='close'
+        data-dismiss='alert'
+        aria-label='Close'
+      >
+        <span aria-hidden='true'> &times;</span>
       </button>
     </div>
-    <div class='alert alert-danger alert-dismissible fade show' id='error-type' role='alert'>
+    <div
+      class='alert alert-danger alert-dismissible fade show'
+      id='error-type'
+      role='alert'
+    >
       <strong>¡ERROR!</strong> Tu mensaje debe tener más de 70 caracteres.
-      <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-          <span aria-hidden='true'>
-            &times;
-          </span>
+      <button
+        type='button'
+        class='close'
+        data-dismiss='alert'
+        aria-label='Close'
+      >
+        <span aria-hidden='true'> &times;</span>
       </button>
     </div>
     <div class='alime-contact-form mt-50'>
@@ -78,13 +107,13 @@ import Heading from '@/core/components/information/Heading.astro';
               name='message'
               id='mensaje'
               class='form-control mb-30'
-              placeholder='Mensaje'
-            ></textarea>
+              placeholder='Mensaje'></textarea>
             <div
               class='g-recaptcha'
               data-sitekey='6LdHSWkaAAAAAELJQQ_bUVfGYPeIm_0t2HqDGe-V'
               data-callback='recaptcha_callback'
-            ></div>
+            >
+            </div>
             <br />
           </div>
           <div class='col-12'>
@@ -93,7 +122,7 @@ import Heading from '@/core/components/information/Heading.astro';
               id='submit-contact'
               class='btn alime-btn btn-2 mt-15'
               disabled
-            >Envíar
+              >Envíar
             </button>
           </div>
         </div>

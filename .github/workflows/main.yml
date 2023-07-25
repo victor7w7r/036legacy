@@ -1,4 +1,4 @@
-name: "Github Deploy"
+name: 'Github Deploy'
 on:
   push:
     branches:

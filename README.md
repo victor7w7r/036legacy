@@ -4,7 +4,7 @@ Stio web antiguo, revisitado y re-escrito para Astro.
 
 **[Pruébalo aquí](https://victor7w7r.github.io/036legacy/)**
 
-![Alt text](brandwhite.png?raw=true "Title")
+![Alt text](brandwhite.png?raw=true 'Title')
 
 ## IMPORTANTE
 
@@ -21,7 +21,7 @@ Puedes descargarlo y testearlo de cómo ha quedado el proyecto en sus días.
 > Curiosidad 2: Me he demorado menos de un día en re-limpiar todo el proyecto de React a Solid.js.
 > Curiosidad 3: 2 días y medio en dejar a manera definitiva todo el proyecto de Solid.js a Vue.
 >
->Curiosidad finalisima, me he demorado 2 días y hace 9 meses de julio del 2023 en dos días más en dejar todo el proyecto de Vue a Astro de manera definitiva.
+> Curiosidad finalisima, me he demorado 2 días y hace 9 meses de julio del 2023 en dos días más en dejar todo el proyecto de Vue a Astro de manera definitiva.
 
 ## Cosas que no funcionan o funcionan mal
 
@@ -33,7 +33,7 @@ Puedes descargarlo y testearlo de cómo ha quedado el proyecto en sus días.
 
 ### Por si quieres probar y verificar (Usa pnpm)
 
-``` bash
+```bash
 # git clone https://github.com/victor7w7r/036legacy
 
 $ cd 036legacy

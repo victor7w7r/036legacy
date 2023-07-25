@@ -1,179 +1,215 @@
-@import "../../core/scss/036.scss";
+@import '../../core/scss/036.scss';
 
-  body { 
+body {
+  background-color: #191916 !important;
 
-    background-color: #191916 !important;
-  
-    h1,h2,h3,h4,h5,h6 {
-        color: #ffffff !important;
-    }
-  
-    a,
-    a:active,
-    a:focus,
-    a:hover {
-      color: #ffffff !important;
-    }
-    
-    p {
-      color: #ffffff !important;
-    }
-  
-    .subtitle {  
-      color: #ffffff !important;
-    }
-  
-    .alime-btn {
-      color: #ffffff;
-      border: 2px solid #ffffff!important;
-    }
-    .alime-btn.btn-2 {
-        color: #ffffff !important; 
-    }
-      
-    .alime-btn:focus, .alime-btn:hover {
-        background-color: #ffffff !important;
-        color: #000000 !important; 
-    }
-  
-    .classy-nav-container .classy-navbar .classynav ul li a:hover, 
-    .classy-nav-container .classy-navbar .classynav ul li a:focus {
-      color: #959bfc !important; 
-    }
-  
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .classy-nav-container .classy-navbar .classynav ul li a:hover,
-      .classy-nav-container .classy-navbar .classynav ul li a:focus {
-          color: #959bfc !important; 
-      }
-    }
-  
-    @media only screen and (max-width: 767px) {
-      .classy-nav-container .classy-navbar .classynav ul li a:hover,
-      .classy-nav-container .classy-navbar .classynav ul li a:focus {
-          color: #959bfc !important;
-      }
-    }
-    .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a,
-    .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a {
-        color: #252525 !important;
-    }
-  
-    .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:focus,
-    .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a:hover,
-    .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:focus,
-    .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a:hover {
-      color: #6971fa !important;
-    }
-    .classynav ul li.active a::before {
-      background-color: #ffffff !important;
-    }
-  
-    .classynav ul li.has-down > a::after,
-    .classynav ul li.has-down.active > a::after,
-    .classynav ul li.megamenu-item > a::after {
-        color: #ffffff !important;
-    }
-  
-    .classy-navbar-toggler .navbarToggler span {
-      background-color: #4f80b8 !important; 
-    }
-  
-    .main-header-area.sticky {
-      background-color: #5a2ccd !important; 
-    }
-  
-    .single-welcome-slide .welcome-text .hero-mail-contact:hover, 
-    .single-welcome-slide .welcome-text .hero-mail-contact:focus {
-      color: #fc6060 !important; 
-    }
-  
-    .footer-content{
-  
-      .copywrite-text p {
-        margin-bottom: 0;
-        color: #ffffff !important; 
-  
-        .social-info a {
-          color: #ffffff !important;
-        }
-      }
-    }
-  
-    .breadcrumb-content .breadcrumb .breadcrumb-item {
-      color: #6971fa !important;
-    }
-  
-    .breadcrumb-content .breadcrumb .breadcrumb-item a:hover, 
-    .breadcrumb-content .breadcrumb .breadcrumb-item a:focus {
-      color: #6971fa !important; 
-    }
-  
-    .breadcrumb-area.blog .breadcrumb-content .post-catagory {
-      background-color: #fc6060 !important;
-    }
-  
-    .breadcrumb-area.blog .breadcrumb-content .post-meta a:hover, 
-    .breadcrumb-area.blog .breadcrumb-content .post-meta a:focus {
-      color: #6971fa !important; 
-    }
-  
-    .alime-blockquote h6 {
-      color: #7e7f9c !important;
-    }
-    .post-author-area .post-social-info a:hover, 
-    .post-author-area .post-social-info a:focus {
-      color: #6971fa !important; 
-    }
-  
-    .alime-pager-area .previous .overlay-content .post-title:hover, 
-    .alime-pager-area .previous .overlay-content .post-title:focus,
-    .alime-pager-area .next .overlay-content .post-title:hover,
-    .alime-pager-area .next .overlay-content .post-title:focus {
-      color: #fc6060 !important; 
-    }
-  
-    .pagination .page-link:hover, 
-    .pagination .page-link:focus {
-      background-color: #6971fa !important; 
-      border-color: #6971fa !important; 
-    }
-  
-    .comment_area .comment-content .comment-meta .post-date:hover, 
-    .comment_area .comment-content .comment-meta .post-date:focus {
-      color: #6971fa !important; 
-    }
-  
-    .comment_area .comment-content .comment-meta .like:focus, 
-    .comment_area .comment-content .comment-meta .like:hover,
-    .comment_area .comment-content .comment-meta .reply:focus,
-    .comment_area .comment-content .comment-meta .reply:hover {
-      border-color: #6971fa !important;
-      background-color: #6971fa !important;
-    }
-  
-    .single-post-area .post-content .post-meta a:hover, 
-    .single-post-area .post-content .post-meta a:focus {
-      color: #6971fa !important; 
-    }
-    .single-post-area .post-content .post-meta a:hover::after, 
-    .single-post-area .post-content .post-meta a:focus::after {
-        color: #ffffff !important; 
-    }
-  
-    .single-post-area .post-content .post-title:hover, 
-    .single-post-area .post-content .post-title:focus {
-      color: #6971fa !important; 
-    }
-  
-    .alime-projects-menu .portfolio-menu .btn {
-        color: #ffffff !important;
-    }
-  
-    .alime-contact-form .form-control:focus {
-      border-color: #6971fa !important; 
-    }
-    
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #ffffff !important;
   }
 
+  a,
+  a:active,
+  a:focus,
+  a:hover {
+    color: #ffffff !important;
+  }
 
+  p {
+    color: #ffffff !important;
+  }
+
+  .subtitle {
+    color: #ffffff !important;
+  }
+
+  .alime-btn {
+    color: #ffffff;
+    border: 2px solid #ffffff !important;
+  }
+  .alime-btn.btn-2 {
+    color: #ffffff !important;
+  }
+
+  .alime-btn:focus,
+  .alime-btn:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .classy-nav-container .classy-navbar .classynav ul li a:hover,
+  .classy-nav-container .classy-navbar .classynav ul li a:focus {
+    color: #959bfc !important;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .classy-nav-container .classy-navbar .classynav ul li a:hover,
+    .classy-nav-container .classy-navbar .classynav ul li a:focus {
+      color: #959bfc !important;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .classy-nav-container .classy-navbar .classynav ul li a:hover,
+    .classy-nav-container .classy-navbar .classynav ul li a:focus {
+      color: #959bfc !important;
+    }
+  }
+  .classy-nav-container
+    .classy-navbar
+    .classynav
+    ul
+    li.cn-dropdown-item
+    ul
+    li
+    a,
+  .classy-nav-container .classy-navbar .classynav ul li.megamenu-item ul li a {
+    color: #252525 !important;
+  }
+
+  .classy-nav-container
+    .classy-navbar
+    .classynav
+    ul
+    li.cn-dropdown-item
+    ul
+    li
+    a:focus,
+  .classy-nav-container
+    .classy-navbar
+    .classynav
+    ul
+    li.cn-dropdown-item
+    ul
+    li
+    a:hover,
+  .classy-nav-container
+    .classy-navbar
+    .classynav
+    ul
+    li.megamenu-item
+    ul
+    li
+    a:focus,
+  .classy-nav-container
+    .classy-navbar
+    .classynav
+    ul
+    li.megamenu-item
+    ul
+    li
+    a:hover {
+    color: #6971fa !important;
+  }
+  .classynav ul li.active a::before {
+    background-color: #ffffff !important;
+  }
+
+  .classynav ul li.has-down > a::after,
+  .classynav ul li.has-down.active > a::after,
+  .classynav ul li.megamenu-item > a::after {
+    color: #ffffff !important;
+  }
+
+  .classy-navbar-toggler .navbarToggler span {
+    background-color: #4f80b8 !important;
+  }
+
+  .main-header-area.sticky {
+    background-color: #5a2ccd !important;
+  }
+
+  .single-welcome-slide .welcome-text .hero-mail-contact:hover,
+  .single-welcome-slide .welcome-text .hero-mail-contact:focus {
+    color: #fc6060 !important;
+  }
+
+  .footer-content {
+    .copywrite-text p {
+      margin-bottom: 0;
+      color: #ffffff !important;
+
+      .social-info a {
+        color: #ffffff !important;
+      }
+    }
+  }
+
+  .breadcrumb-content .breadcrumb .breadcrumb-item {
+    color: #6971fa !important;
+  }
+
+  .breadcrumb-content .breadcrumb .breadcrumb-item a:hover,
+  .breadcrumb-content .breadcrumb .breadcrumb-item a:focus {
+    color: #6971fa !important;
+  }
+
+  .breadcrumb-area.blog .breadcrumb-content .post-catagory {
+    background-color: #fc6060 !important;
+  }
+
+  .breadcrumb-area.blog .breadcrumb-content .post-meta a:hover,
+  .breadcrumb-area.blog .breadcrumb-content .post-meta a:focus {
+    color: #6971fa !important;
+  }
+
+  .alime-blockquote h6 {
+    color: #7e7f9c !important;
+  }
+  .post-author-area .post-social-info a:hover,
+  .post-author-area .post-social-info a:focus {
+    color: #6971fa !important;
+  }
+
+  .alime-pager-area .previous .overlay-content .post-title:hover,
+  .alime-pager-area .previous .overlay-content .post-title:focus,
+  .alime-pager-area .next .overlay-content .post-title:hover,
+  .alime-pager-area .next .overlay-content .post-title:focus {
+    color: #fc6060 !important;
+  }
+
+  .pagination .page-link:hover,
+  .pagination .page-link:focus {
+    background-color: #6971fa !important;
+    border-color: #6971fa !important;
+  }
+
+  .comment_area .comment-content .comment-meta .post-date:hover,
+  .comment_area .comment-content .comment-meta .post-date:focus {
+    color: #6971fa !important;
+  }
+
+  .comment_area .comment-content .comment-meta .like:focus,
+  .comment_area .comment-content .comment-meta .like:hover,
+  .comment_area .comment-content .comment-meta .reply:focus,
+  .comment_area .comment-content .comment-meta .reply:hover {
+    border-color: #6971fa !important;
+    background-color: #6971fa !important;
+  }
+
+  .single-post-area .post-content .post-meta a:hover,
+  .single-post-area .post-content .post-meta a:focus {
+    color: #6971fa !important;
+  }
+  .single-post-area .post-content .post-meta a:hover::after,
+  .single-post-area .post-content .post-meta a:focus::after {
+    color: #ffffff !important;
+  }
+
+  .single-post-area .post-content .post-title:hover,
+  .single-post-area .post-content .post-title:focus {
+    color: #6971fa !important;
+  }
+
+  .alime-projects-menu .portfolio-menu .btn {
+    color: #ffffff !important;
+  }
+
+  .alime-contact-form .form-control:focus {
+    border-color: #6971fa !important;
+  }
+}

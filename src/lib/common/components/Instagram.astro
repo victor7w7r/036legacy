@@ -42,9 +42,11 @@ const items = [
     </div>
   </div>
   <div class='instragram-feed-area owl-carousel'>
-    {items.map(
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-      item => <InstagramItem img={item.img} url={item.url}/>
-    )}
+    {
+      items.map(
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+        item => <InstagramItem img={item.img} url={item.url} />
+      )
+    }
   </div>
 </section>

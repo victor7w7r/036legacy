@@ -4,37 +4,43 @@ const dataDonate = [
     id: 'brave',
     icon: 'fa fa-connectdevelop',
     title: 'Brave Browser',
-    description: 'Es un navegador web optimizado y recomendado para PC de bajos recursos y de optimización de la batería. Si tú usas el explorador por más de 30 días, tienes la posibilidad de ganar 5$, así que, qué esperas.'
+    description:
+      'Es un navegador web optimizado y recomendado para PC de bajos recursos y de optimización de la batería. Si tú usas el explorador por más de 30 días, tienes la posibilidad de ganar 5$, así que, qué esperas.'
   },
   {
     id: 'mine',
     icon: 'fa fa-chrome',
     title: 'Minería Para Todos',
-    description: 'La minería de manera pasiva mientras navegas por internet, es posible, con CryptoTab Browser, puedes medir tu rentabilidad con tu red de minería, si descargas e instalas haciendo click aquí, me ayudarías con mi red con tu minería.'
+    description:
+      'La minería de manera pasiva mientras navegas por internet, es posible, con CryptoTab Browser, puedes medir tu rentabilidad con tu red de minería, si descargas e instalas haciendo click aquí, me ayudarías con mi red con tu minería.'
   },
   {
     id: 'paypal',
     icon: 'fa fa-cc-paypal',
     title: 'PayPal',
-    description: 'Si tienes PayPal, puedes donarme aquí con el servicio PayPal.me, puedes donarme lo que tu corazoncito te diga para qc mis semillas de girasol, mis café, mi hardware y mis cofres para el lolsito.'
+    description:
+      'Si tienes PayPal, puedes donarme aquí con el servicio PayPal.me, puedes donarme lo que tu corazoncito te diga para qc mis semillas de girasol, mis café, mi hardware y mis cofres para el lolsito.'
   },
   {
     id: 'bitcoin',
     icon: 'fa fa-btc',
     title: 'Bitcoin',
-    description: 'Si tienes tu dirección de Bitcoins, puedes donarme aquí con mi dirección de mi cartera, puedes donarme lo que tu corazoncito te diga para que pueda comprarme mis semillas de girasol, mis café, mi hardware y mis cofres para el lolsito.'
+    description:
+      'Si tienes tu dirección de Bitcoins, puedes donarme aquí con mi dirección de mi cartera, puedes donarme lo que tu corazoncito te diga para que pueda comprarme mis semillas de girasol, mis café, mi hardware y mis cofres para el lolsito.'
   },
   {
     id: 'litecoin',
     icon: 'fa fa-money',
     title: 'Litecoin',
-    description: 'Si tienes tu dirección de Litecoins, puedes donarme aquí con mi dirección de mi cartera, puedes donarme lo que tu corazoncito te diga para que pueda comprarme mis semillas de girasol, mis café, mi hardware y mis cofres para el lolsito.'
+    description:
+      'Si tienes tu dirección de Litecoins, puedes donarme aquí con mi dirección de mi cartera, puedes donarme lo que tu corazoncito te diga para que pueda comprarme mis semillas de girasol, mis café, mi hardware y mis cofres para el lolsito.'
   },
   {
     id: 'patreon',
     icon: 'fa fa-product-hunt',
     title: 'Patreon',
-    description: 'Tienes la posibilidad de ser un usuario Premium con solamente donar 1$ al mes, puedes consultarme y puedes ser un usuario VIP en mi server de discord y así de manera obvia me puedes ayudar para crear más videos y mejorar mi sitio web.'
+    description:
+      'Tienes la posibilidad de ser un usuario Premium con solamente donar 1$ al mes, puedes consultarme y puedes ser un usuario VIP en mi server de discord y así de manera obvia me puedes ayudar para crear más videos y mejorar mi sitio web.'
   }
 ];
 ---
@@ -54,19 +60,20 @@ const dataDonate = [
       </div>
     </div>
     <div class='row'>
-      { dataDonate.map((item) => (
+      {
+        dataDonate.map(item => (
           // eslint-disable-next-line @typescript-eslint/no-unsafe-return
           <div class='col-md-6 col-sm-6 col-lg-4'>
             <div
               class='why-choose-us-content text-center mb-80 wow fadeInUp'
               data-wow-delay='300ms'
-              id={ item.id }
+              id={item.id}
             >
               <div class='chosse-us-icon'>
-                <i class:list={[item.icon]} aria-hidden='true'></i>
+                <i class:list={[item.icon]} aria-hidden='true' />
               </div>
-              <h4>{ item.title }</h4>
-              <p>{ item.description }</p>
+              <h4>{item.title}</h4>
+              <p>{item.description}</p>
             </div>
           </div>
         ))
@@ -84,19 +91,20 @@ const dataDonate = [
     win: Window,
     w: number,
     h: number
-  ): Window => window.open(
-    url,
-    title,
-    `tooPlbar=no, location=no, directories=no, status=no, menubar=no,
+  ): Window =>
+    window.open(
+      url,
+      title,
+      `tooPlbar=no, location=no, directories=no, status=no, menubar=no,
       crollbars=no, resizable=no, copyhistory=no,
-      width=${w}, height=${h}, top=${win.top!.outerHeight / 2 + win.top!.screenY - ( h / 2)},
-      left=${win.top!.outerWidth / 2 + win.top!.screenX - ( w / 2)}`
+      width=${w}, height=${h}, top=${
+        win.top!.outerHeight / 2 + win.top!.screenY - h / 2
+      },
+      left=${win.top!.outerWidth / 2 + win.top!.screenX - w / 2}`
     ) as Window;
 
-  $('#brave').onclick = () =>
-    window.open('https://brave.com/stu660', '_blank');
-  $('#mine').onclick = () =>
-    window.open('https://cb.run/victor7w7r', '_blank');
+  $('#brave').onclick = () => window.open('https://brave.com/stu660', '_blank');
+  $('#mine').onclick = () => window.open('https://cb.run/victor7w7r', '_blank');
   $('#paypal').onclick = () =>
     popupWindow('http://paypal.me/arkano036/', 'test', window, 800, 600);
   $('#bitcoin').onclick = () =>
@@ -104,14 +112,16 @@ const dataDonate = [
       'https://blockchain.info/address/35QcBjNwr7S5f8taxb4ZPHXTY35kAXTyLq',
       'test',
       window,
-      800, 600
+      800,
+      600
     );
   $('#litecoin').onclick = () =>
     popupWindow(
       'https://blockchair.com/es/litecoin/address/MUguoM2jXCVGaJB5GUygHHjj764H2NBEcN',
       'test',
       window,
-      800, 600
+      800,
+      600
     );
   $('#patreon').onclick = () =>
     window.open('https://www.patreon.com/036studios', '_blank');

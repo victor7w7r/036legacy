@@ -57,10 +57,32 @@
       "Club Penguin (Loquendo)"
     ],
     "thumb": [
-      "chr6","chr5","chr4","che3","che2","chr1",
-      "fr1","fr2","apa","lla","lil","cv1","ref",
-      "exx","fr3","ha","fr4","astr","weee","asd",
-      "poo","pista","rrr","hg","rra","aaa"
+      "chr6",
+      "chr5",
+      "chr4",
+      "che3",
+      "che2",
+      "chr1",
+      "fr1",
+      "fr2",
+      "apa",
+      "lla",
+      "lil",
+      "cv1",
+      "ref",
+      "exx",
+      "fr3",
+      "ha",
+      "fr4",
+      "astr",
+      "weee",
+      "asd",
+      "poo",
+      "pista",
+      "rrr",
+      "hg",
+      "rra",
+      "aaa"
     ]
   },
   "lol": {
@@ -76,7 +98,7 @@
       "Noche de chill con el sapo volador",
       "Yasuo el pajas locas le decían"
     ],
-    "thumb": ["msi","jh","nv", "yaa"]
+    "thumb": ["msi", "jh", "nv", "yaa"]
   },
   "musica": {
     "covers": {
@@ -85,12 +107,12 @@
         "https://www.youtube.com/watch?v=LEDJ1GHQIms",
         "https://www.youtube.com/watch?v=Mk64Yf6oeMc"
       ],
-        "title": [
+      "title": [
         "Kudai - Aún",
         "Paola Navarrete - Desde hace un tiempo",
         "Zahara - Chico Fabuloso"
       ],
-      "thumb": ["aun","dsd","cch"]
+      "thumb": ["aun", "dsd", "cch"]
     },
     "lyrics": {
       "url": [
@@ -105,7 +127,7 @@
         "Puella Magi Madoka☆Magica: Aoi Yuuki - Mata Ashita",
         "La Oreja De Van Gogh - Mariposa (Nightcore Mix)"
       ],
-      "thumb": ["lenk","gr","aaad","llo"]
+      "thumb": ["lenk", "gr", "aaad", "llo"]
     },
     "touhou": {
       "url": [
@@ -142,10 +164,22 @@
         "Hatsuki Yura - Yoiyami Hanabi",
         "senya - Replica no Koi"
       ],
-        "thumb": [
-        "nan1","bambo","shi","wwaa","mami",
-        "bloo","waaaa","sss","drei","ggg",
-        "you","be","aii","hhy","sssd"
+      "thumb": [
+        "nan1",
+        "bambo",
+        "shi",
+        "wwaa",
+        "mami",
+        "bloo",
+        "waaaa",
+        "sss",
+        "drei",
+        "ggg",
+        "you",
+        "be",
+        "aii",
+        "hhy",
+        "sssd"
       ]
     }
   },
@@ -161,7 +195,7 @@
         "Cómo Jugar osu!taiko",
         "¿ACASO ESTO SE LAME? Unboxing Intuos"
       ],
-      "thumb": ["wac","tai","intu"]
+      "thumb": ["wac", "tai", "intu"]
     },
     "init": {
       "url": [
@@ -178,7 +212,7 @@
         "Osu! INTENTANDO UNA DIFICIL: Matsumoto Tamaki - Tenshi Teki Kenpou Yonjou",
         "Osu! FALLANDO EN EL MAPA IMPOSIBLE: Nico Nico Douga - U.N Owen Was Her"
       ],
-      "thumb": ["dj","rre","mmm","o1","fal"]
+      "thumb": ["dj", "rre", "mmm", "o1", "fal"]
     },
     "recop": {
       "url": [
@@ -189,7 +223,7 @@
         "osu!: Recopilación de Fails #1",
         "osu!: Recopilación de Fails #2"
       ],
-      "thumb": ["1a","2a"]
+      "thumb": ["1a", "2a"]
     },
     "review": {
       "url": [
@@ -226,9 +260,22 @@
         "osu! Review Express #14: Consejos Para Mania",
         "osu! Review Express #15: Últimos Consejos"
       ],
-      "thumb":[
-        "1","2","3","4","pp","6","7","8","9",
-        "10","11","12","13","14","15"
+      "thumb": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "pp",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
       ]
     },
     "xpress": {
@@ -296,10 +343,36 @@
         "Taiko no Tatsujin - Mekadesu"
       ],
       "thumb": [
-        "ushi1","ushi2","ccs","tsu","ddd","pn","maff","prism","aaas",
-        "hito","ayase","ryu","anata","ci","faliz","ka","sssa","nat",
-        "memme1","fuji","mama","sal","cap","m2","nic","ant","eart",
-        "wwe","rest","mass"
+        "ushi1",
+        "ushi2",
+        "ccs",
+        "tsu",
+        "ddd",
+        "pn",
+        "maff",
+        "prism",
+        "aaas",
+        "hito",
+        "ayase",
+        "ryu",
+        "anata",
+        "ci",
+        "faliz",
+        "ka",
+        "sssa",
+        "nat",
+        "memme1",
+        "fuji",
+        "mama",
+        "sal",
+        "cap",
+        "m2",
+        "nic",
+        "ant",
+        "eart",
+        "wwe",
+        "rest",
+        "mass"
       ]
     }
   },
@@ -381,13 +454,45 @@
       "AGRADECIMIENTO 100 SUBS"
     ],
     "thumb": [
-      "cq1","mmv","cc22","pint2","pint1","ADV1","sans","adv3",
-      "chic","psico","ref1","1000","orto","dap","nov21","zoe",
-      "d3","cc1","osuv","autoc","ami","adv2","blanca","st","hbb",
-      "cp1","y1","el","sen","pre","adol","ce","emp","lll","ortog","aad"
+      "cq1",
+      "mmv",
+      "cc22",
+      "pint2",
+      "pint1",
+      "ADV1",
+      "sans",
+      "adv3",
+      "chic",
+      "psico",
+      "ref1",
+      "1000",
+      "orto",
+      "dap",
+      "nov21",
+      "zoe",
+      "d3",
+      "cc1",
+      "osuv",
+      "autoc",
+      "ami",
+      "adv2",
+      "blanca",
+      "st",
+      "hbb",
+      "cp1",
+      "y1",
+      "el",
+      "sen",
+      "pre",
+      "adol",
+      "ce",
+      "emp",
+      "lll",
+      "ortog",
+      "aad"
     ]
   },
-  "tutorials":{
+  "tutorials": {
     "info": {
       "url": [
         "https://www.youtube.com/watch?v=ququ4YZWpM4",
@@ -401,10 +506,10 @@
         "Cómo instalar Windows 10 y Ubuntu en una máquina virtual",
         "Como Instalar FreeBSD 10 con GNOME 3"
       ],
-      "thumb": ["opt1","csha","ubu1","free1"]
+      "thumb": ["opt1", "csha", "ubu1", "free1"]
     },
     "misc": {
-      "url":[
+      "url": [
         "https://www.youtube.com/watch?v=AgTZMUw5vvY",
         "https://www.youtube.com/watch?v=usK2ABn2FEY",
         "https://www.youtube.com/watch?v=w1XdCPb07RY"
@@ -414,7 +519,7 @@
         "Cable Plug & Play Casero Para Mando XBOX 360",
         "Terminologia XBOX 360  ¿Qué es LT 3.0 y RGH?"
       ],
-      "thumb": ["cac","cable","ter"]
+      "thumb": ["cac", "cable", "ter"]
     },
     "multimedia": {
       "url": [
@@ -423,13 +528,13 @@
         "https://www.youtube.com/watch?v=-qXLzq51HQs",
         "https://www.youtube.com/watch?v=p_ipoJSTdSQ"
       ],
-        "title": [
-          "Así es mi forma de editar",
-          "Tips básicos para edición en Premiere",
-          "Tips básicos para edición en Photoshop",
-          "Cómo hacer tus propios mixes de nightcore"
+      "title": [
+        "Así es mi forma de editar",
+        "Tips básicos para edición en Premiere",
+        "Tips básicos para edición en Photoshop",
+        "Cómo hacer tus propios mixes de nightcore"
       ],
-      "thumb": ["asi2","pre1","pho1","night1"]
+      "thumb": ["asi2", "pre1", "pho1", "night1"]
     },
     "rubik": {
       "url": [
@@ -450,7 +555,7 @@
         "Recomendaciones Para Mejorar La Práctica del Cubo de Rubik",
         "Cubo de Rubik 3x3 Por Fridrich Reducido"
       ],
-      "thumb": ["not1","metd1","44d","551","552","rec1","33d"]
+      "thumb": ["not1", "metd1", "44d", "551", "552", "rec1", "33d"]
     }
   }
 }

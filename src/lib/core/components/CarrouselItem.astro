@@ -1,8 +1,8 @@
 ---
 type Props = {
-    img: string,
-    routerTitle: string,
-    body: string
+  img: string;
+  routerTitle: string;
+  body: string;
 };
 
 const { img, routerTitle, body } = Astro.props;
@@ -16,10 +16,7 @@ const { img, routerTitle, body } = Astro.props;
     <div class='row h-100 align-items-center'>
       <div class='col-12 col-lg-8 col-xl-6'>
         <div class='welcome-text'>
-          <div
-            class='accordion accordion-flush'
-            id='accordionFlushExample'
-          >
+          <div class='accordion accordion-flush' id='accordionFlushExample'>
             <h2 data-animation='fadeInDown' data-delay='900ms'>
               <slot />
             </h2>

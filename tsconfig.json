@@ -1,5 +1,4 @@
 {
-  "extends": "./tsconfig.lint.json",
   "compilerOptions": {
     "allowJs": false,
     "baseUrl": ".",
@@ -15,6 +14,5 @@
     "skipLibCheck": true,
     "target": "ES2020"
   },
-  "files": ["./.eslintrc.cjs"],
-  "include": ["src", "./*.d.ts"]
+  "extends": "./tsconfig.app.json"
 }

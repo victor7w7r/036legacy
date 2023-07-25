@@ -1,8 +1,8 @@
 ---
 type Props = {
-    img: string,
-    title: string,
-    route: string
+  img: string;
+  title: string;
+  route: string;
 };
 
 const { img, title, route } = Astro.props;
@@ -16,18 +16,17 @@ const { img, title, route } = Astro.props;
     <div class='row h-100 align-items-center'>
       <div class='col-12'>
         <div class='breadcrumb-content text-center'>
-          <h2 class='page-title'>{ title }</h2>
+          <h2 class='page-title'>{title}</h2>
           <nav aria-label='breadcrumb'>
             <ol class='breadcrumb justify-content-center'>
               <li class='breadcrumb-item'>
                 <a rel='prefetch' href='/'>
                   <i class='icon_house_alt'></i>
-                    Inicio
+                   Inicio
                 </a>
               </li>
-              <li
-                class='breadcrumb-item active'
-                aria-current='page'>{ route }
+              <li class='breadcrumb-item active' aria-current='page'>
+                {route}
               </li>
             </ol>
           </nav>
