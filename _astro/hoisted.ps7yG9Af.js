@@ -1,0 +1,1 @@
+const t=document.querySelector("#chatbox"),c=document.querySelector("#chat-content");document.querySelector("#chatbox-title-close").onclick=()=>t.classList.add("chatbox--closed"),document.querySelector("#chatbox-title").onclick=()=>{t.classList.toggle("chatbox--tray"),c.scrollTop=c.scrollHeight-c.clientHeight};

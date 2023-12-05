@@ -1,0 +1,1 @@
+import"./hoisted.ps7yG9Af.js";const e=e=>window.open(e,"_blank").focus();document.querySelector("#reserve-container").onclick=()=>e("mailto:info@036studios.info?Subject=Clases%20Analisis%20Matematico");
