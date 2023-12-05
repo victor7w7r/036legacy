@@ -60,10 +60,8 @@
 </section>
 
 <script>
-  import { $ } from 'carbonium';
-
   const tab = (url: string) => (window.open(url, '_blank')! as Window).focus();
 
-  $('#reserve-container').onclick = () =>
+  document.querySelector<HTMLElement>('#reserve-container')!.onclick = () =>
     tab('mailto:info@036studios.info?Subject=Clases%20Analisis%20Matematico');
 </script>

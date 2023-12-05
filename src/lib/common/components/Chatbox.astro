@@ -55,16 +55,14 @@
 </div>
 
 <script>
-  import { $ } from 'carbonium';
+  const chatbox = document.querySelector('#chatbox');
+  const scrollTray = document.querySelector('#chat-content');
 
-  const chatbox = $('#chatbox');
-  const scrollTray = $('#chat-content');
+  document.querySelector<HTMLElement>('#chatbox-title-close')!.onclick = () =>
+    chatbox!.classList.add('chatbox--closed');
 
-  $('#chatbox-title-close').onclick = () =>
-    chatbox.classList.add('chatbox--closed');
-
-  $('#chatbox-title').onclick = () => {
-    chatbox.classList.toggle('chatbox--tray');
-    scrollTray.scrollTop = scrollTray.scrollHeight - scrollTray.clientHeight;
+  document.querySelector<HTMLElement>('#chatbox-title')!.onclick = () => {
+    chatbox!.classList.toggle('chatbox--tray');
+    scrollTray!.scrollTop = scrollTray!.scrollHeight - scrollTray!.clientHeight;
   };
 </script>

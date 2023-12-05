@@ -13,16 +13,15 @@
     "start": "astro dev"
   },
   "dependencies": {
-    "astro": "^3.6.4",
-    "carbonium": "^1.2.4"
+    "astro": "^4.0.1"
   },
   "devDependencies": {
     "@types/eslint": "8.44.8",
-    "@typescript-eslint/eslint-plugin": "6.13.1",
-    "@typescript-eslint/parser": "^6.13.1",
+    "@typescript-eslint/eslint-plugin": "6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
     "astro-compress": "^2.2.3",
-    "eslint": "^8.54.0",
-    "eslint-config-prettier": "^9.0.0",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-astro": "^0.30.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-prettier": "^5.0.1",

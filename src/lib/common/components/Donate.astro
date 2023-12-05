@@ -83,8 +83,6 @@ const dataDonate = [
 </section>
 
 <script>
-  import { $ } from 'carbonium';
-
   const popupWindow = (
     url: string,
     title: string,
@@ -103,11 +101,11 @@ const dataDonate = [
       left=${win.top!.outerWidth / 2 + win.top!.screenX - w / 2}`
     ) as Window;
 
-  $('#brave').onclick = () => window.open('https://brave.com/stu660', '_blank');
-  $('#mine').onclick = () => window.open('https://cb.run/victor7w7r', '_blank');
-  $('#paypal').onclick = () =>
+  document.querySelector<HTMLElement>('#brave')!.onclick = () => window.open('https://brave.com/stu660', '_blank');
+  document.querySelector<HTMLElement>('#mine')!.onclick = () => window.open('https://cb.run/victor7w7r', '_blank');
+  document.querySelector<HTMLElement>('#paypal')!.onclick = () =>
     popupWindow('http://paypal.me/arkano036/', 'test', window, 800, 600);
-  $('#bitcoin').onclick = () =>
+  document.querySelector<HTMLElement>('#bitcoin')!.onclick = () =>
     popupWindow(
       'https://blockchain.info/address/35QcBjNwr7S5f8taxb4ZPHXTY35kAXTyLq',
       'test',
@@ -115,7 +113,7 @@ const dataDonate = [
       800,
       600
     );
-  $('#litecoin').onclick = () =>
+  document.querySelector<HTMLElement>('#litecoin')!.onclick = () =>
     popupWindow(
       'https://blockchair.com/es/litecoin/address/MUguoM2jXCVGaJB5GUygHHjj764H2NBEcN',
       'test',
@@ -123,6 +121,6 @@ const dataDonate = [
       800,
       600
     );
-  $('#patreon').onclick = () =>
+  document.querySelector<HTMLElement>('#patreon')!.onclick = () =>
     window.open('https://www.patreon.com/036studios', '_blank');
 </script>
