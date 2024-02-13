@@ -55,14 +55,14 @@
 </div>
 
 <script>
-  const chatbox = document.querySelector('#chatbox');
-  const scrollTray = document.querySelector('#chat-content');
+  const chatbox = document.querySelector('#chatbox')
+  const scrollTray = document.querySelector('#chat-content')
 
   document.querySelector<HTMLElement>('#chatbox-title-close')!.onclick = () =>
-    chatbox!.classList.add('chatbox--closed');
+    chatbox!.classList.add('chatbox--closed')
 
   document.querySelector<HTMLElement>('#chatbox-title')!.onclick = () => {
-    chatbox!.classList.toggle('chatbox--tray');
-    scrollTray!.scrollTop = scrollTray!.scrollHeight - scrollTray!.clientHeight;
-  };
+    chatbox!.classList.toggle('chatbox--tray')
+    scrollTray!.scrollTop = scrollTray!.scrollHeight - scrollTray!.clientHeight
+  }
 </script>

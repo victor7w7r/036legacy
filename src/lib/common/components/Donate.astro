@@ -42,7 +42,7 @@ const dataDonate = [
     description:
       'Tienes la posibilidad de ser un usuario Premium con solamente donar 1$ al mes, puedes consultarme y puedes ser un usuario VIP en mi server de discord y así de manera obvia me puedes ayudar para crear más videos y mejorar mi sitio web.'
   }
-];
+]
 ---
 
 <section class='why-choose-us-area bg-gray section-padding-80-0 clearfix'>
@@ -99,12 +99,14 @@ const dataDonate = [
         win.top!.outerHeight / 2 + win.top!.screenY - h / 2
       },
       left=${win.top!.outerWidth / 2 + win.top!.screenX - w / 2}`
-    ) as Window;
+    ) as Window
 
-  document.querySelector<HTMLElement>('#brave')!.onclick = () => window.open('https://brave.com/stu660', '_blank');
-  document.querySelector<HTMLElement>('#mine')!.onclick = () => window.open('https://cb.run/victor7w7r', '_blank');
+  document.querySelector<HTMLElement>('#brave')!.onclick = () =>
+    window.open('https://brave.com/stu660', '_blank')
+  document.querySelector<HTMLElement>('#mine')!.onclick = () =>
+    window.open('https://cb.run/victor7w7r', '_blank')
   document.querySelector<HTMLElement>('#paypal')!.onclick = () =>
-    popupWindow('http://paypal.me/arkano036/', 'test', window, 800, 600);
+    popupWindow('http://paypal.me/arkano036/', 'test', window, 800, 600)
   document.querySelector<HTMLElement>('#bitcoin')!.onclick = () =>
     popupWindow(
       'https://blockchain.info/address/35QcBjNwr7S5f8taxb4ZPHXTY35kAXTyLq',
@@ -112,7 +114,7 @@ const dataDonate = [
       window,
       800,
       600
-    );
+    )
   document.querySelector<HTMLElement>('#litecoin')!.onclick = () =>
     popupWindow(
       'https://blockchair.com/es/litecoin/address/MUguoM2jXCVGaJB5GUygHHjj764H2NBEcN',
@@ -120,7 +122,7 @@ const dataDonate = [
       window,
       800,
       600
-    );
+    )
   document.querySelector<HTMLElement>('#patreon')!.onclick = () =>
-    window.open('https://www.patreon.com/036studios', '_blank');
+    window.open('https://www.patreon.com/036studios', '_blank')
 </script>

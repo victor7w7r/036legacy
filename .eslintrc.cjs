@@ -123,7 +123,7 @@ module.exports = {
         '@typescript-eslint/strict-boolean-expressions': 'error',
         '@typescript-eslint/switch-exhaustiveness-check': 'error',
         'arrow-body-style': ['warn', 'as-needed'],
-        'astro/semi': ['error', 'always'],
+        'astro/semi': ['error', 'never'],
         'astro/no-set-text-directive': 'warn',
         'astro/prefer-class-list-directive': 'warn',
         'astro/prefer-object-class-list': 'warn',
