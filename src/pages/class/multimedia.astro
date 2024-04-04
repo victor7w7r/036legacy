@@ -1,17 +1,16 @@
 ---
-import CoreLayout from '@/core/layout/CoreLayout.astro'
-
-import Disponibility from '@/core/components/teaching/Disponibility.astro'
 import Description from '@/core/components/teaching/Description.astro'
+import Disponibility from '@/core/components/teaching/Disponibility.astro'
 import Heading from '@/core/components/teaching/Heading.astro'
 import Reserve from '@/core/components/teaching/Reserve.astro'
+import CoreLayout from '@/core/layout/CoreLayout.astro'
 ---
 
 <CoreLayout>
   <Heading
+    body='Informática | Edición Fotográfica | Edición de Video'
     img='/img/core/editi1.jpg'
     title='Edición Multimedia'
-    body='Informática | Edición Fotográfica | Edición de Video'
   />
   <Disponibility>
     <div class='alert alert-success' role='alert'>
@@ -46,52 +45,52 @@ import Reserve from '@/core/components/teaching/Reserve.astro'
       <div class='col-4'>
         <div class='list-group' id='list-tab' role='tablist'>
           <a
+            aria-controls='home'
             class='list-group-item list-group-item-action active'
-            id='list-home-list'
             data-toggle='list'
             href='#list-home'
+            id='list-home-list'
             role='tab'
-            aria-controls='home'
           >
             Edición de fotografía
           </a>
           <a
+            aria-controls='profile'
             class='list-group-item list-group-item-action'
-            id='list-profile-list'
             data-toggle='list'
             href='#list-profile'
+            id='list-profile-list'
             role='tab'
-            aria-controls='profile'
           >
             Edición de pistas de video
           </a>
           <a
+            aria-controls='messages'
             class='list-group-item list-group-item-action'
-            id='list-messages-list'
             data-toggle='list'
             href='#list-messages'
+            id='list-messages-list'
             role='tab'
-            aria-controls='messages'
           >
             Gráficos en movimiento y efectos especiales
           </a>
           <a
+            aria-controls='settings'
             class='list-group-item list-group-item-action'
-            id='list-settings-list'
             data-toggle='list'
             href='#list-settings'
+            id='list-settings-list'
             role='tab'
-            aria-controls='settings'
           >
             Fundamientos de animación
           </a>
           <a
+            aria-controls='sett2'
             class='list-group-item list-group-item-action'
-            id='list-sett2-list'
             data-toggle='list'
             href='#list-sett2'
+            id='list-sett2-list'
             role='tab'
-            aria-controls='sett2'
           >
             Manipulación de audio
           </a>
@@ -100,10 +99,10 @@ import Reserve from '@/core/components/teaching/Reserve.astro'
       <div class='col-8'>
         <div class='tab-content' id='nav-tabContent'>
           <div
+            aria-labelledby='list-home-list'
             class='tab-pane fade show active'
             id='list-home'
             role='tabpanel'
-            aria-labelledby='list-home-list'
           >
             -Adobe Photoshop: Controles y primeras impresiones
             <br /> -Resoluciones de imagen
@@ -123,10 +122,10 @@ import Reserve from '@/core/components/teaching/Reserve.astro'
             <br />
           </div>
           <div
+            aria-labelledby='list-profile-list'
             class='tab-pane fade'
             id='list-profile'
             role='tabpanel'
-            aria-labelledby='list-profile-list'
           >
             -Adobe Premiere Pro: Controles y primeras impresiones
             <br /> -Formatos y extensiones de video
@@ -144,10 +143,10 @@ import Reserve from '@/core/components/teaching/Reserve.astro'
             <br />
           </div>
           <div
+            aria-labelledby='list-messages-list'
             class='tab-pane fade'
             id='list-messages'
             role='tabpanel'
-            aria-labelledby='list-messages-list'
           >
             -Adobe After Effects: Controles y primeras impresiones
             <br /> -Fundamentos de propiedades de video y fotos
@@ -169,10 +168,10 @@ import Reserve from '@/core/components/teaching/Reserve.astro'
             <br /> -Pincel de rotoscopía
           </div>
           <div
+            aria-labelledby='list-settings-list'
             class='tab-pane fade'
             id='list-settings'
             role='tabpanel'
-            aria-labelledby='list-settings-list'
           >
             -Adobe Animate: Controles y primeras impresiones
             <br /> -Fundamentos de propiedades de video y fotos
@@ -191,10 +190,10 @@ import Reserve from '@/core/components/teaching/Reserve.astro'
             y animación de stickmans
           </div>
           <div
+            aria-labelledby='list-sett2-list'
             class='tab-pane fade'
             id='list-sett2'
             role='tabpanel'
-            aria-labelledby='list-sett2-list'
           >
             -Adobe Audition: Controles y primeras impresiones
             <br /> -Formatos y extensiones de audio
@@ -229,10 +228,10 @@ import Reserve from '@/core/components/teaching/Reserve.astro'
             <div
               class='overlay-content d-flex align-items-center justify-content-center'
             >
-              <a rel='prefetch' href='/class/objects' class='post-title'
+              <a class='post-title' href='/class/objects' rel='prefetch'
                 >Programación Orientada a Objetos</a
               >
-              <a href='# ' class='previous-link'><i class='arrow_left'></i></a>
+              <a class='previous-link' href='# '><i class='arrow_left'></i></a>
             </div>
           </div>
         </div>
@@ -244,10 +243,10 @@ import Reserve from '@/core/components/teaching/Reserve.astro'
             <div
               class='overlay-content d-flex align-items-center justify-content-center'
             >
-              <a rel='prefetch' href='/class/design' class='post-title'
+              <a class='post-title' href='/class/design' rel='prefetch'
                 >Diseño Web</a
               >
-              <a href='# ' class='next-link'><i class='arrow_right'></i></a>
+              <a class='next-link' href='# '><i class='arrow_right'></i></a>
             </div>
           </div>
         </div>

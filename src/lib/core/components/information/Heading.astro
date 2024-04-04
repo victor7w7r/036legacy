@@ -1,11 +1,11 @@
 ---
 type Props = {
   img: string
-  title: string
   route: string
+  title: string
 }
 
-const { img, title, route } = Astro.props
+const { img, route, title } = Astro.props
 ---
 
 <section
@@ -20,12 +20,12 @@ const { img, title, route } = Astro.props
           <nav aria-label='breadcrumb'>
             <ol class='breadcrumb justify-content-center'>
               <li class='breadcrumb-item'>
-                <a rel='prefetch' href='/'
+                <a href='/' rel='prefetch'
                   ><i class='icon_house_alt'></i>
                   Inicio
                 </a>
               </li>
-              <li class='breadcrumb-item active' aria-current='page'>
+              <li aria-current='page' class='breadcrumb-item active'>
                 {route}
               </li>
             </ol>

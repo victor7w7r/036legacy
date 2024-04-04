@@ -13,7 +13,7 @@ import data from '@/youtube/data/youtube.json'
             data-wow-delay='100ms'
           >
             <h6 class='wow fadeInUp' data-wow-delay='100ms'>
-              <a href='url' target='_blank' rel='noopener noreferrer'>
+              <a href='url' rel='noopener noreferrer' target='_blank'>
                 {data.tutorials.misc.title[index]}
               </a>
             </h6>
@@ -24,11 +24,11 @@ import data from '@/youtube/data/youtube.json'
               data-wow-delay='100ms'
             >
               <img
-                src={`/img/youtube/thumbs/${data.tutorials.misc.thumb[index]}.jpg`}
                 alt=''
+                src={`/img/youtube/thumbs/${data.tutorials.misc.thumb[index]}.jpg`}
               />
               <div class='video-icon'>
-                <a href={url} class='video-play-btn'>
+                <a class='video-play-btn' href={url}>
                   <i class='arrow_triangle-right' />
                 </a>
               </div>

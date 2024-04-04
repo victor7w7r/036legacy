@@ -1,17 +1,16 @@
 ---
-import CoreLayout from '@/core/layout/CoreLayout.astro'
-
-import Disponibility from '@/core/components/teaching/Disponibility.astro'
 import Description from '@/core/components/teaching/Description.astro'
+import Disponibility from '@/core/components/teaching/Disponibility.astro'
 import Heading from '@/core/components/teaching/Heading.astro'
 import Reserve from '@/core/components/teaching/Reserve.astro'
+import CoreLayout from '@/core/layout/CoreLayout.astro'
 ---
 
 <CoreLayout>
   <Heading
+    body='Matemáticas | Espacios Vectoriales | Transformaciones Lineales'
     img='/img/core/linear1.jpg'
     title='Álgebra Lineal'
-    body='Matemáticas | Espacios Vectoriales | Transformaciones Lineales'
   />
   <Disponibility>
     <div class='alert alert-success' role='alert'>
@@ -53,32 +52,32 @@ import Reserve from '@/core/components/teaching/Reserve.astro'
       <div class='col-4'>
         <div class='list-group' id='list-tab' role='tablist'>
           <a
+            aria-controls='home'
             class='list-group-item list-group-item-action active'
-            id='list-home-list'
             data-toggle='list'
             href='#list-home'
+            id='list-home-list'
             role='tab'
-            aria-controls='home'
           >
             Matrices, Determinantes y Sistemas de Ecuaciones
           </a>
           <a
+            aria-controls='profile'
             class='list-group-item list-group-item-action'
-            id='list-profile-list'
             data-toggle='list'
             href='#list-profile'
+            id='list-profile-list'
             role='tab'
-            aria-controls='profile'
           >
             Espacios y Subespacios Vectoriales
           </a>
           <a
+            aria-controls='messages'
             class='list-group-item list-group-item-action'
-            id='list-messages-list'
             data-toggle='list'
             href='#list-messages'
+            id='list-messages-list'
             role='tab'
-            aria-controls='messages'
           >
             Transformaciones Lineales, Valores y Vectores Propios
           </a>
@@ -87,10 +86,10 @@ import Reserve from '@/core/components/teaching/Reserve.astro'
       <div class='col-8'>
         <div class='tab-content' id='nav-tabContent'>
           <div
+            aria-labelledby='list-home-list'
             class='tab-pane fade show active'
             id='list-home'
             role='tabpanel'
-            aria-labelledby='list-home-list'
           >
             -Matrices: Definiciones y propiedades
             <br /> -Producto y Potencia de matrices
@@ -112,10 +111,10 @@ import Reserve from '@/core/components/teaching/Reserve.astro'
             <br /> -Método de Cramer
           </div>
           <div
+            aria-labelledby='list-profile-list'
             class='tab-pane fade'
             id='list-profile'
             role='tabpanel'
-            aria-labelledby='list-profile-list'
           >
             -Espacios Vectoriales: Definición y propiedades
             <br /> -Subespacios Vectoriales: Propiedades
@@ -132,10 +131,10 @@ import Reserve from '@/core/components/teaching/Reserve.astro'
             <br /> -Proyecciones ortonormales
           </div>
           <div
+            aria-labelledby='list-messages-list'
             class='tab-pane fade'
             id='list-messages'
             role='tabpanel'
-            aria-labelledby='list-messages-list'
           >
             -Transformaciones Lineales: Definición y propiedades
             <br /> -Matriz asociada, núcleo e imagen de una transformación
@@ -171,10 +170,10 @@ import Reserve from '@/core/components/teaching/Reserve.astro'
             <div
               class='overlay-content d-flex align-items-center justify-content-center'
             >
-              <a rel='prefetch' href='/class/math' class='post-title'
+              <a class='post-title' href='/class/math' rel='prefetch'
                 >Matemáticas de Colegio</a
               >
-              <a href='# ' class='previous-link'><i class='arrow_left'></i></a>
+              <a class='previous-link' href='# '><i class='arrow_left'></i></a>
             </div>
           </div>
         </div>
@@ -186,10 +185,10 @@ import Reserve from '@/core/components/teaching/Reserve.astro'
             <div
               class='overlay-content d-flex align-items-center justify-content-center'
             >
-              <a rel='prefetch' href='/class/struct' class='post-title'
+              <a class='post-title' href='/class/struct' rel='prefetch'
                 >Programación Estructural</a
               >
-              <a href='# ' class='next-link'><i class='arrow_right'></i></a>
+              <a class='next-link' href='# '><i class='arrow_right'></i></a>
             </div>
           </div>
         </div>

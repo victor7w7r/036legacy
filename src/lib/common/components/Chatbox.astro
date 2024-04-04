@@ -5,10 +5,10 @@
         <h5><a href='# '>Chat</a></h5>
         <button class='chatbox__title__close' id='chatbox-title-close'>
           <span>
-            <svg viewBox='0 0 12 12' width='12px' height='12px'>
-              <line stroke='#FFFFFF' x1='11.75' y1='0.25' x2='0.25' y2='11.75'
+            <svg height='12px' viewBox='0 0 12 12' width='12px'>
+              <line stroke='#FFFFFF' x1='11.75' x2='0.25' y1='0.25' y2='11.75'
               ></line>
-              <line stroke='#FFFFFF' x1='11.75' y1='11.75' x2='0.25' y2='0.25'
+              <line stroke='#FFFFFF' x1='11.75' x2='0.25' y1='11.75' y2='0.25'
               ></line>
             </svg>
           </span>
@@ -19,32 +19,32 @@
         <div class='panel-footer'>
           <div class='input-group'>
             <input
-              id='chat-nombre'
-              type='text'
-              class='form-control input-sm chat_set_height'
-              placeholder='Nombre'
-              tabindex={0}
-              dir='ltr'
-              spellcheck='false'
-              autocomplete='off'
               autocapitalize='off'
+              autocomplete='off'
+              class='form-control input-sm chat_set_height'
               contenteditable='true'
+              dir='ltr'
+              id='chat-nombre'
+              placeholder='Nombre'
+              spellcheck='false'
+              tabindex={0}
+              type='text'
             />
           </div>
           <div class='input-group'>
             <input
-              id='chat-texto'
-              type='text'
-              class='form-control input-sm chat_set_height'
-              placeholder='Mensaje'
-              tabindex={0}
-              dir='ltr'
-              spellcheck='false'
-              autocomplete='off'
               autocapitalize='off'
+              autocomplete='off'
+              class='form-control input-sm chat_set_height'
               contenteditable='true'
+              dir='ltr'
+              id='chat-texto'
+              placeholder='Mensaje'
+              spellcheck='false'
+              tabindex={0}
+              type='text'
             />
-            <button class='btn bt_bg btn-sm' type='submit' id='chat-submit'>
+            <button class='btn bt_bg btn-sm' id='chat-submit' type='submit'>
               Envíar
             </button>
           </div>

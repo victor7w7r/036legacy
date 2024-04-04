@@ -1,11 +1,11 @@
 ---
 type Props = {
+  body: string
   img: string
   url: string
-  body: string
 }
 
-const { img, url, body } = Astro.props
+const { body, img, url } = Astro.props
 ---
 
 <div
@@ -23,13 +23,13 @@ const { img, url, body } = Astro.props
             {body}
           </p>
           <div
-            data-animation='fadeInDown'
             class='portfolio-video-area wow'
-            data-wow-delay='500ms'
+            data-animation='fadeInDown'
             data-delay='500ms'
+            data-wow-delay='500ms'
           >
             <div class='video-icon'>
-              <a rel='prefetch' href={url} class='video-play-btn'>
+              <a class='video-play-btn' href={url} rel='prefetch'>
                 <i class='arrow_triangle-right'></i>
               </a>
             </div>

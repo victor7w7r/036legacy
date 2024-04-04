@@ -8,12 +8,12 @@ const { img, url } = Astro.props
 ---
 
 <div class='single-instagram-item'>
-  <img src={img} alt='' />
+  <img alt='' src={img} />
   <div
     class='instagram-hover-content text-center d-flex align-items-center justify-content-center'
   >
-    <a href={url} target='_blank' rel='noopener noreferrer prefetch'>
-      <i class='ti-instagram' aria-hidden='true'></i>
+    <a href={url} rel='noopener noreferrer prefetch' target='_blank'>
+      <i aria-hidden='true' class='ti-instagram'></i>
       <span>victor7w7r</span>
     </a>
   </div>

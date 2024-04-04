@@ -9,9 +9,9 @@ const { img, url } = Astro.props
   data-wow-delay='500ms'
 >
   <div class='single-portfolio-content'>
-    <img src={img} alt='' />
+    <img alt='' src={img} />
     <div class='hover-content video-icon'>
-      <a rel='prefetch' href={url}><i class='arrow_triangle-right'></i></a>
+      <a href={url} rel='prefetch'><i class='arrow_triangle-right'></i></a>
     </div>
   </div>
 </div>

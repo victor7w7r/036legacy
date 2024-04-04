@@ -1,14 +1,14 @@
 ---
-import CoreLayout from '@/core/layout/CoreLayout.astro'
 import Donate from '@/common/components/Donate.astro'
 import Heading from '@/core/components/financial/Heading.astro'
+import CoreLayout from '@/core/layout/CoreLayout.astro'
 ---
 
 <CoreLayout>
   <Heading
+    desc='Financial | AirTM | Card'
     img='/img/core/airtm-wall.jpg'
     title='Tarjeta Prepagada de Airtm'
-    desc='Financial | AirTM | Card'
   />
   <section class='our-team-area section-padding-class'>
     <div class='about-us-area section-padding-80-0 clearfix'>
@@ -33,8 +33,8 @@ import Heading from '@/core/components/financial/Heading.astro'
                 class='btn alime-btn btn-2 mt-30 wow fadeInUp'
                 data-wow-delay='500ms'
                 href='https://app.airtm.com/ivt/deLsNaLO'
-                target='_blank'
                 rel='noopener noreferrer'
+                target='_blank'
               >
                 ¡Regístrame!
               </a>
@@ -45,11 +45,11 @@ import Heading from '@/core/components/financial/Heading.astro'
               class='about-video-area mb-80 wow fadeInUp'
               data-wow-delay='100ms'
             >
-              <img src='/img/core/airtm-thumb.jpg' alt='' />
+              <img alt='' src='/img/core/airtm-thumb.jpg' />
               <div class='video-icon'>
                 <a
-                  href='https://www.youtube.com/watch?v=ALf__LAImTA'
                   class='video-play-btn'
+                  href='https://www.youtube.com/watch?v=ALf__LAImTA'
                 >
                   <i class='arrow_triangle-right'></i>
                 </a>
@@ -65,7 +65,7 @@ import Heading from '@/core/components/financial/Heading.astro'
       <div class='alert alert-warning' role='alert'>
         <strong>¡Fondéame!</strong>
         Antes de proceder, te invito a que vayas
-        <a rel='prefetch' href='/financial/airtm/transfer' class='alert-link'
+        <a class='alert-link' href='/financial/airtm/transfer' rel='prefetch'
           >aquí</a
         >. Si no sabes como fondear o retirar en Airtm.
       </div>
@@ -111,32 +111,32 @@ import Heading from '@/core/components/financial/Heading.astro'
             <div class='col-4'>
               <div class='list-group' id='list-tab' role='tablist'>
                 <a
+                  aria-controls='home'
                   class='list-group-item list-group-item-action active'
-                  id='list-home-list'
                   data-toggle='list'
                   href='#list-home'
+                  id='list-home-list'
                   role='tab'
-                  aria-controls='home'
                 >
                   Comisión y recargos
                 </a>
                 <a
+                  aria-controls='profile'
                   class='list-group-item list-group-item-action'
-                  id='list-profile-list'
                   data-toggle='list'
                   href='#list-profile'
+                  id='list-profile-list'
                   role='tab'
-                  aria-controls='profile'
                 >
                   Compras en Línea
                 </a>
                 <a
+                  aria-controls='settings'
                   class='list-group-item list-group-item-action'
-                  id='list-settings-list'
                   data-toggle='list'
                   href='#list-settings'
+                  id='list-settings-list'
                   role='tab'
-                  aria-controls='settings'
                 >
                   Dirección de Facturación
                 </a>
@@ -145,10 +145,10 @@ import Heading from '@/core/components/financial/Heading.astro'
             <div class='col-8'>
               <div class='tab-content' id='nav-tabContent'>
                 <div
+                  aria-labelledby='list-home-list'
                   class='tab-pane fade show active'
                   id='list-home'
                   role='tabpanel'
-                  aria-labelledby='list-home-list'
                 >
                   -Tarjeta virtual prepagada generada para hacer múltiples
                   compras $1 USD de comisión por cada compra para eso debes
@@ -158,20 +158,20 @@ import Heading from '@/core/components/financial/Heading.astro'
                   <br />
                 </div>
                 <div
+                  aria-labelledby='list-profile-list'
                   class='tab-pane fade'
                   id='list-profile'
                   role='tabpanel'
-                  aria-labelledby='list-profile-list'
                 >
                   -Dicha tarjeta se utilizará en cualquier lugar en línea que
                   acepte Mastercard o Visa debes tener en cuenta que los pagos
                   por contenido adulto y apuestas están prohibidos
                 </div>
                 <div
+                  aria-labelledby='list-settings-list'
                   class='tab-pane fade'
                   id='list-settings'
                   role='tabpanel'
-                  aria-labelledby='list-settings-list'
                 >
                   -Al ingresar la dirección de facturación o el código postal
                   durante la compra, usa la dirección de la sede central de
@@ -196,9 +196,9 @@ import Heading from '@/core/components/financial/Heading.astro'
         >
           <br />
           <div class='single-portfolio-content'>
-            <img src='/img/core/airtm-thumb.jpg' alt='' />
+            <img alt='' src='/img/core/airtm-thumb.jpg' />
             <div class='hover-content'>
-              <a href='/img/core/airtm-thumb.jpg' class='portfolio-img'>+</a>
+              <a class='portfolio-img' href='/img/core/airtm-thumb.jpg'>+</a>
             </div>
           </div>
           <br />

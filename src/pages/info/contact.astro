@@ -1,10 +1,10 @@
 ---
-import CoreLayout from '@/core/layout/CoreLayout.astro'
 import Heading from '@/core/components/information/Heading.astro'
+import CoreLayout from '@/core/layout/CoreLayout.astro'
 ---
 
 <CoreLayout>
-  <Heading img='/img/core/pCOT.jpg' title='Contáctanos' route='Contacto' />
+  <Heading img='/img/core/pCOT.jpg' route='Contacto' title='Contáctanos' />
   <div class='contact-area section-padding-80-50'>
     <div class='container'>
       <div class='row'>
@@ -27,10 +27,10 @@ import Heading from '@/core/components/information/Heading.astro'
       Tu mensaje ha sido enviado exitosamente. Te responderemos a tu correo en menos
       de 24 horas.
       <button
-        type='button'
+        aria-label='Close'
         class='close'
         data-dismiss='alert'
-        aria-label='Close'
+        type='button'
       >
         <span aria-hidden='true'> &times;</span>
       </button>
@@ -42,10 +42,10 @@ import Heading from '@/core/components/information/Heading.astro'
     >
       <strong>¡ERROR!</strong> Rellena todos los campos para enviar.
       <button
-        type='button'
+        aria-label='Close'
         class='close'
         data-dismiss='alert'
-        aria-label='Close'
+        type='button'
       >
         <span aria-hidden='true'> &times;</span>
       </button>
@@ -57,10 +57,10 @@ import Heading from '@/core/components/information/Heading.astro'
     >
       <strong>¡ERROR!</strong> Correo electrónico no válido.
       <button
-        type='button'
+        aria-label='Close'
         class='close'
         data-dismiss='alert'
-        aria-label='Close'
+        type='button'
       >
         <span aria-hidden='true'> &times;</span>
       </button>
@@ -72,10 +72,10 @@ import Heading from '@/core/components/information/Heading.astro'
     >
       <strong>¡ERROR!</strong> Tu mensaje debe tener más de 70 caracteres.
       <button
-        type='button'
+        aria-label='Close'
         class='close'
         data-dismiss='alert'
-        aria-label='Close'
+        type='button'
       >
         <span aria-hidden='true'> &times;</span>
       </button>
@@ -86,42 +86,42 @@ import Heading from '@/core/components/information/Heading.astro'
         <div class='row'>
           <div class='col-12 col-md-6'>
             <input
-              type='text'
+              class='form-control mb-30'
               id='nick'
               name='message-name'
-              class='form-control mb-30'
               placeholder='Tu nick'
+              type='text'
             />
           </div>
           <div class='col-12 col-md-6'>
             <input
-              type='email'
+              class='form-control mb-30'
               id='email'
               name='message-email'
-              class='form-control mb-30'
               placeholder='Correo'
+              type='email'
             />
           </div>
           <div class='col-12'>
             <textarea
-              name='message'
-              id='mensaje'
               class='form-control mb-30'
+              id='mensaje'
+              name='message'
               placeholder='Mensaje'></textarea>
             <div
               class='g-recaptcha'
-              data-sitekey='6LdHSWkaAAAAAELJQQ_bUVfGYPeIm_0t2HqDGe-V'
               data-callback='recaptcha_callback'
+              data-sitekey='6LdHSWkaAAAAAELJQQ_bUVfGYPeIm_0t2HqDGe-V'
             >
             </div>
             <br />
           </div>
           <div class='col-12'>
             <button
-              type='submit'
-              id='submit-contact'
               class='btn alime-btn btn-2 mt-15'
               disabled
+              id='submit-contact'
+              type='submit'
               >Envíar
             </button>
           </div>

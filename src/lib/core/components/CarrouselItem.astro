@@ -1,11 +1,11 @@
 ---
 type Props = {
+  body: string
   img: string
   routerTitle: string
-  body: string
 }
 
-const { img, routerTitle, body } = Astro.props
+const { body, img, routerTitle } = Astro.props
 ---
 
 <div
@@ -29,9 +29,9 @@ const { img, routerTitle, body } = Astro.props
               data-delay='100ms'
             >
               <a
+                class='btn alime-btn mb-3 mb-sm-0 mr-4'
                 href='/info/changelog/'
                 rel='prefetch'
-                class='btn alime-btn mb-3 mb-sm-0 mr-4'
               >
                 {routerTitle}
               </a>
