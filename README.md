@@ -35,6 +35,6 @@ Puedes descargarlo y testearlo de cómo ha quedado el proyecto en sus días.
 # git clone https://github.com/victor7w7r/036legacy
 
 $ cd 036legacy
-$ pnpm i
-$ pnpm dev
+$ bun install
+$ bun run dev
 ```
