@@ -1,5 +1,5 @@
 /** @type {import("eslint").Linter.Config} */
-// eslint-disable-next-line import/no-commonjs, toplevel/no-toplevel-side-effect
+// eslint-disable-next-line toplevel/no-toplevel-side-effect, import/no-commonjs
 module.exports = {
   env: {
     browser: true,
@@ -17,9 +17,15 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:import/typescript',
     'plugin:perfectionist/recommended-natural',
+    'plugin:lit/recommended',
     'plugin:promise/recommended',
-    'plugin:sonarjs/recommended',
-    'plugin:unicorn/recommended'
+    'plugin:security/recommended-legacy',
+    'plugin:solid/typescript',
+    'plugin:sonarjs/recommended-legacy',
+    'plugin:tailwindcss/recommended',
+    'plugin:unicorn/recommended',
+    'plugin:wc/recommended',
+    'plugin:wc/best-practice'
   ],
   overrides: [
     {
@@ -72,7 +78,6 @@ module.exports = {
           }
         ],
         '@typescript-eslint/require-array-sort-compare': 'error',
-        '@typescript-eslint/restrict-template-expressions': 'off',
         '@typescript-eslint/sort-type-constituents': 'warn',
         '@typescript-eslint/strict-boolean-expressions': 'error',
         '@typescript-eslint/switch-exhaustiveness-check': 'error',
@@ -89,7 +94,7 @@ module.exports = {
         'functional/no-throw-statements': 'error',
         'functional/no-try-statements': 'error',
         'functional/prefer-immutable-types': 'off',
-        'import/exports-last': 'error',
+        'import/exports-last': 'off',
         'import/no-absolute-path': 'error',
         'import/no-amd': 'error',
         'import/no-commonjs': 'error',
@@ -103,6 +108,8 @@ module.exports = {
         'import/no-unused-modules': 'warn',
         'import/no-useless-path-segments': 'error',
         'import/order': 'off',
+        'lit/no-useless-template-literals': 'warn',
+        'lit/quoted-expressions': 'warn',
         'max-statements-per-line': ['warn', { 'max': 1 }],
         'no-console': 'warn',
         'no-constructor-return': 'error',
@@ -137,11 +144,13 @@ module.exports = {
         'promise/always-return': 'off',
         'simple-import-sort/exports': 'warn',
         'simple-import-sort/imports': 'warn',
+        'solid/prefer-show': 'warn',
+        'solid/reactivity': 'off',
+        'solid/self-closing-comp': 'off',
         'toplevel/no-toplevel-let': 'warn',
         'toplevel/no-toplevel-side-effect': 'warn',
         'toplevel/no-toplevel-var': 'error',
         'unicorn/consistent-destructuring': 'error',
-        'unicorn/filename-case': 'off',
         'unicorn/no-await-expression-member': 'off',
         'unicorn/no-keyword-prefix': 'error',
         'unicorn/no-unused-properties': 'warn',
@@ -149,14 +158,12 @@ module.exports = {
         'unicorn/prevent-abbreviations': 'off',
         'yoda': ['error', 'never', { 'exceptRange': false }]
       }
-    }
+    },
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 'latest',
     extraFileExtensions: ['.astro'],
-    project: './tsconfig.eslint.json',
-    sourceType: 'module'
+    project: './tsconfig.eslint.json'
   },
   plugins: [
     '@typescript-eslint',
@@ -165,8 +172,11 @@ module.exports = {
     'perfectionist',
     'prettier',
     'promise',
+    'security',
+    'solid',
     'sonarjs',
     'simple-import-sort',
+    'tailwindcss',
     'toplevel',
     'unicorn'
   ],
@@ -215,7 +225,6 @@ module.exports = {
       }
     ],
     '@typescript-eslint/require-array-sort-compare': 'error',
-    '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/sort-type-constituents': 'warn',
     '@typescript-eslint/strict-boolean-expressions': 'error',
     '@typescript-eslint/switch-exhaustiveness-check': 'error',
@@ -241,6 +250,8 @@ module.exports = {
     'import/no-unused-modules': 'warn',
     'import/no-useless-path-segments': 'error',
     'import/order': 'off',
+    'lit/no-useless-template-literals': 'warn',
+    'lit/quoted-expressions': 'warn',
     'max-statements-per-line': ['warn', { 'max': 1 }],
     'no-console': 'warn',
     'no-constructor-return': 'error',
@@ -275,13 +286,14 @@ module.exports = {
     'promise/always-return': 'off',
     'simple-import-sort/exports': 'warn',
     'simple-import-sort/imports': 'warn',
+    'solid/jsx-no-undef': 'off',
+    'solid/prefer-show': 'warn',
+    'solid/reactivity': 'off',
     'toplevel/no-toplevel-let': 'warn',
-    'toplevel/no-toplevel-side-effect': 'warn',
     'toplevel/no-toplevel-var': 'error',
     'unicorn/consistent-destructuring': 'error',
     'unicorn/filename-case': 'off',
     'unicorn/no-await-expression-member': 'off',
-    'unicorn/no-keyword-prefix': 'error',
     'unicorn/no-unused-properties': 'warn',
     'unicorn/numeric-separators-style': 'off',
     'unicorn/prevent-abbreviations': 'off',

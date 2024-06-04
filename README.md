@@ -29,7 +29,7 @@ Puedes descargarlo y testearlo de cómo ha quedado el proyecto en sus días.
 
 - **Interacción con JQuery**: Los elementos encriptados del template a veces dejan de funcionar (Carrusel de imágenes al inicio, fotos de instagram, etc.), para que regrese a la normalidad pulsa Ctrl + Shift + R para recargar en su totalidad.
 
-### Por si quieres probar y verificar (Usa pnpm)
+### Por si quieres probar y verificar (Usa bun)
 
 ```bash
 # git clone https://github.com/victor7w7r/036legacy
